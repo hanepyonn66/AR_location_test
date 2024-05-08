@@ -10,6 +10,7 @@
     <a-scene vr-mode-ui='enabled: false' arjs='sourceType: webcam; videoTexture: true; debugUIEnabled: false' renderer='antialias: true; alpha: true'>
 
         <a-camera gps-new-camera='gpsMinDistance: 5'></a-camera>
+        <a-camera gps-camera rotation-reader></a-camera>
     
         <!-- 本館東 -->
         <a-entity material='color: turquoise' geometry='primitive: box' gps-new-entity-place="latitude:35.4240562; longitude:139.5426021" scale="10 10 10"></a-entity>
