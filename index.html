@@ -11,9 +11,34 @@
   <script type='text/javascript'
     src='https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js'></script>
   <script src="https://unpkg.com/aframe-look-at-component@0.8.0/dist/aframe-look-at-component.min.js"></script>
+
+  <script>
+    function test() {
+      navigator.geolocation.getCurrentPosition(test2);
+    }
+
+    function test2(position) {
+
+      var geo_text = "緯度:" + position.coords.latitude + "\n";
+      geo_text += "経度:" + position.coords.longitude + "\n";
+      geo_text += "高度:" + position.coords.altitude + "\n";
+      geo_text += "位置精度:" + position.coords.accuracy + "\n";
+      geo_text += "高度精度:" + position.coords.altitudeAccuracy + "\n";
+      geo_text += "移動方向:" + position.coords.heading + "\n";
+      geo_text += "速度:" + position.coords.speed + "\n";
+
+      var date = new Date(position.timestamp);
+
+      geo_text += "取得時刻:" + date.toLocaleString() + "\n";
+
+      alert(geo_text);
+
+    }
+  </script>
 </head>
 
 <body>
+  <button onclick="test()">test</button>
   <a-scene vr-mode-ui='enabled: false' arjs='sourceType: webcam; videoTexture: true; debugUIEnabled: false'
     renderer='antialias: true; alpha: true'>
 
@@ -124,8 +149,8 @@
       align="center"></a-text>
 
     <a-text value="密度テスト 1" look-at="[gps-new-camera]" scale="1 10 1"
-      gps-new-entity-place="latitude: 35.4240303; longitude: 139.542414;" position="0 10 0" color="black"
-      align="center" font="noto-sans-cjk-jp-msdf.json" font-image="noto-sans-cjk-jp-msdf.png"></a-text>
+      gps-new-entity-place="latitude: 35.4240303; longitude: 139.542414;" position="0 10 0" color="black" align="center"
+      font="noto-sans-cjk-jp-msdf.json" font-image="noto-sans-cjk-jp-msdf.png"></a-text>
 
     <a-text value="密度テスト 2" look-at="[gps-new-camera]" scale="10 10 10"
       gps-new-entity-place="latitude: 35.4239909; longitude: 139.5423523;" position="0 10 0" color="black"
