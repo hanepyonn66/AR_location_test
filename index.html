@@ -24,10 +24,6 @@
       <script type="text/javascript">
         // OS識別用
         let os;
-
-        // DOM構築完了イベントハンドラ登録
-        window.addEventListener("DOMContentLoaded", init);
-
         // 初期化
         function init() {
           // 簡易的なOS判定
@@ -70,6 +66,7 @@
             degrees = compassHeading(alpha, beta, gamma);
           }
           var hogehogeValue = "0 " + degrees + " 0"; // 任意の値に置き換える
+          
           document.getElementById("rig").setAttribute("rotation", hogehogeValue);
         }
 
