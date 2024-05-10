@@ -21,7 +21,8 @@
         <a-camera id="camera"></a-camera>
       </a-entity>
 
-      <script type="text/javascript">
+      <script>
+
         // OS識別用
         let os;
         // 初期化
@@ -31,12 +32,8 @@
           if (os == "iphone") {
             // safari用。DeviceOrientation APIの使用をユーザに許可して貰う
             document.querySelector("#permit").addEventListener("click", permitDeviceOrientationForSafari);
+            orientation();
 
-            window.addEventListener(
-              "deviceorientation",
-              orientation,
-              true
-            );
           } else if (os == "android") {
             window.addEventListener(
               "deviceorientationabsolute",
@@ -44,7 +41,7 @@
               true
             );
           } else {
-            window.alert("PC未対応サンプル");
+            alert("PC未対応サンプル");
           }
         }
 
