@@ -11,13 +11,11 @@
     <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
     <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
     <a-camera position="0 1 0"></a-camera>
-    <!-- カメラ画像を表示するための球体 -->
-    <a-sky></a-sky>
-
-    <!-- カメラからのビデオストリームを取得する -->
-    <video id="video" autoplay></video>
+    <a-sky>
+      <!-- カメラ画像を背景に設定するビデオ要素 -->
+      <video id="video" autoplay></video>
+    </a-sky>
   </a-scene>
-
   <script>
     // カメラからビデオストリームを取得する
     navigator.mediaDevices.getUserMedia({ video: true })
