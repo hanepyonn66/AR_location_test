@@ -2,6 +2,11 @@
 
 <head>
   <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+  <script>
+    // JavaScriptでのhogehogeの更新
+    var hogehogeValue = "90"; // 任意の値に置き換える
+    document.getElementById("rig").setAttribute("rotation", "0 " + hogehogeValue + " 0");
+    </script>
 </head>
 
 <body>
@@ -21,14 +26,7 @@
       </a-entity>
 
     </a-scene>
-    <script>
-      // JavaScriptでの出力
-      var hogehogeValue = "90"; // 任意の値に置き換える
-      
-      // rigというIDを持つ要素内のa-cameraのrotation属性を更新
-      document.getElementById("rig").querySelector("a-camera").setAttribute("rotation", "0 " + hogehogeValue + " 0");
-      </script>
+    
   </body>
-
 
 </html>
