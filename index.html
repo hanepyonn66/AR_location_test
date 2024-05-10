@@ -26,9 +26,20 @@
       <a-entity id="rig" rotation = >
         <a-camera id="camera"></a-camera>
       </a-entity>
+      <script>
+        alert('test5');
+        //var hogehogeValue = "0 90 0"; // 任意の値に置き換える
+        document.getElementById("rig").setAttribute("rotation", "0 0 0");
+        alert('test6');
+      </script>
 
     </a-scene>
-
+    <script>
+      alert('test3');
+      //var hogehogeValue = "0 90 0"; // 任意の値に置き換える
+      document.getElementById("rig").setAttribute("rotation", "0 0 0");
+      alert('test4');
+    </script>
   </body>
 
 </html>
