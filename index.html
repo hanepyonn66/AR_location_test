@@ -29,11 +29,12 @@
         function init() {
           // 簡易的なOS判定
           os = detectOSSimply();
+          alert("test0");
           if (os == "iphone") {
             // safari用。DeviceOrientation APIの使用をユーザに許可して貰う
             document.querySelector("#permit").addEventListener("click", permitDeviceOrientationForSafari);
             orientation();
-
+            alert("test1");
           } else if (os == "android") {
             window.addEventListener(
               "deviceorientationabsolute",
@@ -52,7 +53,7 @@
           let alpha = event.alpha;
           let beta = event.beta;
           let gamma = event.gamma;
-
+          alert("test2");
           let degrees;
           if (os == "iphone") {
             // webkitCompasssHeading値を採用
