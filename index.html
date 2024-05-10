@@ -48,16 +48,16 @@
 
 
         // ジャイロスコープと地磁気をセンサーから取得
-        function orientation(event) {
-          let absolute = event.absolute;
-          let alpha = event.alpha;
-          let beta = event.beta;
-          let gamma = event.gamma;
+        function orientation() {
+          let absolute = DeviceOrientationEvent.absolute;
+          let alpha = DeviceOrientationEvent.alpha;
+          let beta = DeviceOrientationEvent.beta;
+          let gamma = DeviceOrientationEvent.gamma;
           alert("test2");
           let degrees;
           if (os == "iphone") {
             // webkitCompasssHeading値を採用
-            degrees = event.webkitCompassHeading;
+            degrees = DeviceOrientationEvent.webkitCompassHeading;
 
           } else {
             // deviceorientationabsoluteイベントのalphaを補正
