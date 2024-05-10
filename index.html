@@ -2,12 +2,7 @@
 
 <head>
   <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
-  <script>
-    alert('test1');
-    var hogehogeValue = "0 90 0"; // 任意の値に置き換える
-    document.getElementById("rig").setAttribute("rotation", hogehogeValue);
-    alert('test2');
-  </script>
+ 
 </head>
 
 <body>
@@ -16,13 +11,19 @@
   <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
 
   <body style="margin : 0px; overflow: hidden;">
+    <script>
+      alert('test1');
+      var hogehogeValue = "0 90 0"; // 任意の値に置き換える
+      document.getElementById("rig").setAttribute("rotation", hogehogeValue);
+      alert('test2');
+    </script>
     <a-scene embedded arjs>
       <a-box position="0 0 0" rotation="0 0 0" color="#4CC3D9" width="0.1" depth="0.1"></a-box>
       <a-box position="0 0 -1" rotation="0 0 0" color="#FF5733" width="0.1" depth="0.1"></a-box>
       <a-box position="0 0 -2" rotation="0 0 0" color="#77DD77" width="0.1" depth="0.1"></a-box>
       <a-box position="0 0 -3" rotation="0 0 0" color="#FFC300" width="0.1" depth="0.1"></a-box>
       <a-box position="0 0 -4" rotation="0 0 0" color="#9966CC" width="0.1" depth="0.1"></a-box>
-      <a-entity id="rig"rotation = "0 0 0">
+      <a-entity id="rig" rotation = "0 0 0">
         <a-camera id="camera"></a-camera>
       </a-entity>
 
