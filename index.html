@@ -11,12 +11,13 @@
   <script type='text/javascript'
     src='https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js'></script>
   <script src="https://unpkg.com/aframe-look-at-component@0.8.0/dist/aframe-look-at-component.min.js"></script>
+  <script src="index.js"></script>
 
 </head>
 
 <body>
-<p>testtest<br>testing--</p>
-<button>osetukana</button>
+  <p>testtest<br>testing--</p>
+  <button>osetukana</button>
   <a-scene vr-mode-ui='enabled: false' arjs='sourceType: webcam; videoTexture: true; debugUIEnabled: false'
     renderer='antialias: true; alpha: true'>
 
@@ -28,9 +29,9 @@
     <a-entity material='color: white' geometry='primitive: cone'
       gps-new-entity-place="latitude: 35.36898690758848; longitude: 138.72405622350334"
       scale="40000 30000 40000"></a-entity>
-      <a-text value="Mtfuji" look-at="[gps-new-camera]" scale="40000 40000 40000"
-      gps-new-entity-place="latitude: 35.36898690758848; longitude: 138.72405622350334" position="0 30000 0" color="black"
-      align="center"></a-text>
+    <a-text value="Mtfuji" look-at="[gps-new-camera]" scale="40000 40000 40000"
+      gps-new-entity-place="latitude: 35.36898690758848; longitude: 138.72405622350334" position="0 30000 0"
+      color="black" align="center"></a-text>
 
     <!-- 本館東 -->
     <a-entity material='color: turquoise' geometry='primitive:box'
