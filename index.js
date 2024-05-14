@@ -41,6 +41,7 @@ window.onload = () => {
             document.querySelector("a-scene").appendChild(setting3);
             // t_setting1
             const t_setting1 = document.createElement("a-text");
+            t_setting1.setAttribute("value", "setting1");
             t_setting1.setAttribute("scale", { x: 10, y: 10, z: 10 });
             t_setting1.setAttribute("look-at", "[gps-new-camera]");
             t_setting1.setAttribute("position", "0 40 0");
@@ -54,6 +55,7 @@ window.onload = () => {
 
             // t_setting2
             const t_setting2 = document.createElement("a-text");
+            t_setting2.setAttribute("value", "setting2");
             t_setting2.setAttribute("scale", { x: 10, y: 10, z: 10 });
             t_setting2.setAttribute("look-at", "[gps-new-camera]");
             t_setting2.setAttribute("position", "0 40 0");
@@ -67,6 +69,7 @@ window.onload = () => {
 
             // setting3
             const t_setting3 = document.createElement("a-text");
+            t_setting3.setAttribute("value", "setting3");
             t_setting3.setAttribute("scale", { x: 10, y: 10, z: 10 });
             t_setting3.setAttribute("look-at", "[gps-new-camera]");
             t_setting3.setAttribute("position", "0 40 0");
