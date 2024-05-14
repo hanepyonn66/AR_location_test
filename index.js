@@ -9,7 +9,7 @@ window.onload = () => {
             
             // setting1
             const setting1 = document.createElement("a-box");
-            setting1.setAttribute("scale", { x: 20, y: 20, z: 20 });
+            setting1.setAttribute("scale", { x: 5, y: 5, z: 5 });
             setting1.setAttribute('material', { color: 'green' });
             setting1.setAttribute('gps-new-entity-place', {
                 latitude: e.detail.position.latitude + 0.0001,
@@ -20,7 +20,7 @@ window.onload = () => {
 
             // setting2
             const setting2 = document.createElement("a-box");
-            setting2.setAttribute("scale", { x: 20, y: 20, z: 20 });
+            setting2.setAttribute("scale", { x: 5, y: 5, z: 5 });
             setting2.setAttribute('material', { color: 'red' });
             setting2.setAttribute('gps-new-entity-place', {
                 latitude: e.detail.position.latitude,
@@ -31,7 +31,7 @@ window.onload = () => {
 
             // setting3
             const setting3 = document.createElement("a-box");
-            setting3.setAttribute("scale", { x: 20, y: 20, z: 20 });
+            setting3.setAttribute("scale",{ x: 5, y: 5, z: 5 });
             setting3.setAttribute('material', { color: 'blue' });
             setting3.setAttribute('gps-new-entity-place', {
                 latitude: e.detail.position.latitude - 0.0001,
