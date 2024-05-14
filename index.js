@@ -10,9 +10,9 @@ window.onload = () => {
             // setting1
             const setting1 = document.createElement("a-box");
             setting1.setAttribute("scale", { x: 20, y: 20, z: 20 });
-            setting1.setAttribute('material', { color: 'red' });
+            setting1.setAttribute('material', { color: 'green' });
             setting1.setAttribute('gps-new-entity-place', {
-                latitude: e.detail.position.latitude + 0.001,
+                latitude: e.detail.position.latitude + 0.0001,
                 longitude: e.detail.position.longitude
             });
             setting1.setAttribute('position', "0 50 0");
@@ -32,9 +32,9 @@ window.onload = () => {
             // setting3
             const setting3 = document.createElement("a-box");
             setting3.setAttribute("scale", { x: 20, y: 20, z: 20 });
-            setting3.setAttribute('material', { color: 'red' });
+            setting3.setAttribute('material', { color: 'blue' });
             setting3.setAttribute('gps-new-entity-place', {
-                latitude: e.detail.position.latitude - 0.001,
+                latitude: e.detail.position.latitude - 0.0001,
                 longitude: e.detail.position.longitude
             });
             setting3.setAttribute('position', "0 50 0");
