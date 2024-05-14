@@ -19,14 +19,17 @@
   <a-scene vr-mode-ui='enabled: false' arjs='sourceType: webcam; videoTexture: true; debugUIEnabled: false'
     renderer='antialias: true; alpha: true'>
 
-    <a-camera gps-new-camera='gpsMinDistance: 5'></a-camera>
-
+    <a-camera gps-new-camera='gpsMinDistance: 2'></a-camera>
+    <a-entity material='color: white' geometry='primitive: cone' 
+    gps-new-entity-place="latitude: 35.41531434877164; longitude: 139.4863854608374" 
+    scale="40000 3000 40000"></a-entity>
+  
     <a-entity material='color: white' geometry='primitive: cone'
       gps-new-entity-place="latitude: 35.36898690758848; longitude: 138.72405622350334" scale="40000 3000 40000"></a-entity>
 
 
     <!-- 本館東 -->
-    <a-entity material='color: turquoise' geometry='primitive:cone'
+    <a-entity material='color: turquoise' geometry='primitive:box'
       gps-new-entity-place="latitude:35.4240562; longitude:139.5426021" scale="10 10 10"></a-entity>
 
     <!-- 本館中央 -->
