@@ -65,7 +65,7 @@ window.onload = () => {
                 latitude: e.detail.position.latitude,
                 longitude: e.detail.position.longitude
             });
-            t_setting2.setAttribute('clicker');
+            //t_setting2.setAttribute('clicker');
             document.querySelector("a-scene").appendChild(t_setting2);
 
             // setting3
