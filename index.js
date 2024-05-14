@@ -39,6 +39,31 @@ window.onload = () => {
             });
             setting3.setAttribute('position', "0 50 0");
             document.querySelector("a-scene").appendChild(setting3);
+            // t_setting1
+            const t_setting1 = document.createElement("a-text");
+            t_setting1.setAttribute("scale", { x: 10, y: 10, z: 10 });
+            t_setting1.setAttribute("look-at", "[gps-new-camera]");
+            t_setting1.setAttribute("position", "0 40 0");
+            t_setting1.setAttribute("align", "center");
+            t_setting1.setAttribute('color', 'black');
+            t_setting1.setAttribute('gps-new-entity-place', {
+                latitude: e.detail.position.latitude + 0.0001,
+                longitude: e.detail.position.longitude
+            });
+            document.querySelector("a-scene").appendChild(t_setting1);
+
+            // t_setting2
+            const t_setting2 = document.createElement("a-text");
+            t_setting2.setAttribute("scale", { x: 10, y: 10, z: 10 });
+            t_setting2.setAttribute("look-at", "[gps-new-camera]");
+            t_setting2.setAttribute("position", "0 40 0");
+            t_setting2.setAttribute("align", "center");
+            t_setting2.setAttribute('color', 'black');
+            t_setting2.setAttribute('gps-new-entity-place', {
+                latitude: e.detail.position.latitude,
+                longitude: e.detail.position.longitude
+            });
+            document.querySelector("a-scene").appendChild(t_setting2);
 
             // setting3
             const t_setting3 = document.createElement("a-text");
