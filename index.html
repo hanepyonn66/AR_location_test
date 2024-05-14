@@ -15,7 +15,7 @@
 
   <script>
     AFRAME.registerComponent('clicker', {
-        init: function() {
+      init: function () {
         this.el.addEventListener('click', e => {
           alert('Box clicked!');
         });
@@ -28,8 +28,7 @@
   <p>testtest<br>testing--</p>
   <button>osetukana</button>
   <a-scene vr-mode-ui='enabled: false' arjs='sourceType: webcam; videoTexture: true; debugUIEnabled: false'
-    renderer='antialias: true; alpha: true'cursor='rayOrigin: mouse'
-    raycaster='near: 0; far: 50000'>
+    renderer='antialias: true; alpha: true' cursor='rayOrigin: mouse' raycaster='near: 0; far: 50000'>
 
     <a-camera gps-new-camera='gpsMinDistance: 2'></a-camera>
     <a-entity material='color: white' geometry='primitive: cone'
