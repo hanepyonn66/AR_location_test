@@ -19,9 +19,10 @@ window.onload = () => {
             document.querySelector("a-scene").appendChild(setting1);
 
             // setting2
-            const setting2 = document.createElement("a-box");
-            setting2.setAttribute("scale", { x: 5, y: 5, z: 5 });
-            setting2.setAttribute('material', { color: 'red' });
+            const setting2 = document.createElement("a-entity");
+            setting2.setAttribute("geometry",'primitive:box');
+            setting2.setAttribute("scale","5 5 5");
+            setting2.setAttribute('material', 'color: red');
             setting2.setAttribute('gps-new-entity-place', {
                 latitude: e.detail.position.latitude,
                 longitude: e.detail.position.longitude
