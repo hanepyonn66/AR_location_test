@@ -50,7 +50,7 @@ window.onload = () => {
 
             // t_setting1
             const t_setting1 = document.createElement("a-text");
-            t_setting1.setAttribute("value", "setting100");
+            t_setting1.setAttribute("value", "setting1");
             t_setting1.setAttribute("scale", { x: 10, y: 10, z: 10 });
             t_setting1.setAttribute("look-at", "[gps-new-camera]");
             t_setting1.setAttribute("position", "0 40 0");
