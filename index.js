@@ -9,8 +9,8 @@ window.onload = () => {
 
             // setting2
             const setting2 = document.createElement("a-entity");
-            setting2.setAttribute("geometry",'setting2');
-            setting2.setAttribute("id",'primitive:box');
+            setting2.setAttribute("id",'setting2');
+            setting2.setAttribute("geometry",'primitive:box');
             setting2.setAttribute("scale", "5 5 5");
             setting2.setAttribute('material', 'color: red');
             setting2.setAttribute('gps-new-entity-place', {
@@ -24,7 +24,7 @@ window.onload = () => {
 
             // setting1
             const setting1 = document.createElement("a-entity");
-            setting1.setAttribute("geometry",'setting1');
+            setting1.setAttribute("id",'setting1');
             setting1.setAttribute("geometry", 'primitive: box');
             setting1.setAttribute("scale", "5 5 5");
             setting1.setAttribute('material', 'color: black');
@@ -38,7 +38,7 @@ window.onload = () => {
 
             // setting3
             const setting3 = document.createElement("a-entity");
-            setting3.setAttribute("geometry",'setting3');
+            setting3.setAttribute("id",'setting3');
             setting3.setAttribute("geometry", 'primitive: box');
             setting3.setAttribute("scale", "5 5 5");
             setting3.setAttribute('material', 'color: black');
