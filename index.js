@@ -9,7 +9,7 @@ window.onload = () => {
 
             // setting2
             const setting2 = document.createElement("a-entity");
-            setting2.setAttribute("geometry", 'primitive:box');
+            setting2.setAttribute("geometry",'primitive:box');
             setting2.setAttribute("scale", "5 5 5");
             setting2.setAttribute('material', 'color: red');
             setting2.setAttribute('gps-new-entity-place', {
@@ -23,7 +23,7 @@ window.onload = () => {
 
             // setting1
             const setting1 = document.createElement("a-entity");
-            setting1.setAttribute("geometry", 'primitive: box');
+            setting1.setAttribute("geometry", 'primitive: cone');
             setting1.setAttribute("scale", "5 5 5");
             setting1.setAttribute('material', 'color: blue');
             setting1.setAttribute('gps-new-entity-place', {
@@ -84,7 +84,7 @@ window.onload = () => {
             t_setting3.setAttribute("look-at", "[gps-new-camera]");
             t_setting3.setAttribute("position", "0 40 0");
             t_setting3.setAttribute("algin", "center");
-            t_setting3.setAttribute('color', { color: 'black' });
+            t_setting3.setAttribute('color','black');
             t_setting3.setAttribute('gps-new-entity-place', {
                 latitude: e.detail.position.latitude - 0.0001,
                 longitude: e.detail.position.longitude
