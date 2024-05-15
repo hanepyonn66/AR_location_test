@@ -5,7 +5,7 @@ window.onload = () => {
 
     el.addEventListener("gps-camera-update-position", e => {
         if (!testEntityAdded) {
-            alert(`Got first GPS position: lon ${e.detail.position.longitude} lat ${e.detail.position.latitude}`);
+            //alert(`Got first GPS position: lon ${e.detail.position.longitude} lat ${e.detail.position.latitude}`);
 
             // setting2
             const setting2 = document.createElement("a-entity");
