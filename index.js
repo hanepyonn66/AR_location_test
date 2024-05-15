@@ -27,7 +27,7 @@ window.onload = () => {
             setting1.setAttribute("scale", "5 5 5");
             setting1.setAttribute('material', 'color: blue');
             setting1.setAttribute('gps-new-entity-place', {
-                latitude: e.detail.position.latitude + 0.00001,
+                latitude: e.detail.position.latitude + 0.0001,
                 longitude: e.detail.position.longitude
             });
             setting1.setAttribute("clicker");
@@ -40,7 +40,7 @@ window.onload = () => {
             setting3.setAttribute("scale", "5 5 5");
             setting3.setAttribute('material', 'color: green');
             setting3.setAttribute('gps-new-entity-place', {
-                latitude: e.detail.position.latitude - 0.00001,
+                latitude: e.detail.position.latitude - 0.0001,
                 longitude: e.detail.position.longitude
             });
             setting3.setAttribute("clicker");
