@@ -27,14 +27,10 @@
       gps-new-entity-place="latitude: 35.42409122191328; longitude: 139.54206104756895" scale="3 3 3"
       look-at="[gps-new-camera]" animation-mixer></a-entity-->
 
-
-
     <a-entity material="shader: html; target: #htmlElement" geometry='primitive:plane' look-at="[gps-new-camera]"
       gps-new-entity-place="latitude: 35.42409122191328; longitude: 139.54206104756895" scale="10 10 10"></a-entity>
-      
-    <div style="width: 100%; height: 100%; position: fixed; left: 0; top: 0; z-index: -1; overflow: hidden">
-      <div id="htmlElement" style="background: #F8F8F8; color: #333; font-size: 48px">Hello, HTML!</div>
-    </div>
+
+   
     <!-- 本館東 -->
     <a-entity material='color: turquoise' geometry='primitive:box'
       gps-new-entity-place="latitude:35.4240562; longitude:139.5426021" scale="10 10 10"></a-entity>
@@ -197,6 +193,10 @@
     <!--<a-text value="日本語あいうえおかきくけこさしすせそたちつてと" font="noto-sans-cjk-jp-msdf.json" font-image="noto-sans-cjk-jp-msdf.png" look-at="[gps-new-camera]" scale="30 30 30" gps-new-entity-place="latitude:35.4247791; longitude:139.5421455"></a-text>
         -->
   </a-scene>
+
+  <div style="width: 100%; height: 100%; position: fixed; left: 0; top: 0; z-index: -1; overflow: hidden">
+    <div id="htmlElement" style="background: #F8F8F8; color: #333; font-size: 48px">Hello, HTML!</div>
+  </div>
 </body>
 
 </html>
