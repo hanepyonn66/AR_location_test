@@ -15,19 +15,21 @@
   <script src="http://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
   <script src="index.js"></script>
   <script src="clicker.js"></script>
-<style>#htmlElement{
-  height: 200px;
-  width: 200px;
-  z-index: -50;
-  background-color: #FFF;
-}</style>
+  <style>
+    #htmlElement {
+      height: 200px;
+      width: 200px;
+      z-index: -50;
+      background-color: #FFF;
+    }
+  </style>
 </head>
 
 <body>
 
-  
-    <div id="htmlElement">Hello, HTML!v4</div>
- 
+
+  <div id="htmlElement"><h1>Hello, HTML!v5</h1></div>
+
 
   <a-scene vr-mode-ui='enabled: false' arjs='sourceType: webcam; videoTexture: true; debugUIEnabled: false'
     renderer='antialias: true; alpha: true' cursor='rayOrigin: mouse' raycaster='near: 0; far: 50000'>
@@ -41,7 +43,7 @@
     <a-entity material="shader:html; target: #htmlElement" geometry='primitive:plane' look-at="[gps-new-camera]"
       gps-new-entity-place="latitude: 35.42409122191328; longitude: 139.54206104756895" scale="10 10 10"></a-entity>
 
-   
+
     <!-- 本館東 -->
     <a-entity material='color: turquoise' geometry='primitive:box'
       gps-new-entity-place="latitude:35.4240562; longitude:139.5426021" scale="10 10 10"></a-entity>
