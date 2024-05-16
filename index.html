@@ -6,6 +6,7 @@
   <meta charset="UTF-8">
   <title>AR.js A-Frame Location-based</title>
   <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+  <script src="https://unpkg.com/aframe-html-shader@0.2.0/dist/aframe-html-shader.min.js"></script>
   <script type='text/javascript'
     src='https://raw.githack.com/AR-js-org/AR.js/master/three.js/build/ar-threex-location-only.js'></script>
   <script type='text/javascript'
@@ -27,9 +28,13 @@
       look-at="[gps-new-camera]" animation-mixer></a-entity-->
 
 
-    <a-entity material='color: turquoise' geometry='primitive:plane' look-at="[gps-new-camera]"
-      gps-new-entity-place="latitude: 35.42409122191328; longitude: 139.54206104756895" scale="10 10 10"></a-entity>
 
+    <a-entity material="shader: html; target: #htmlElement" geometry='primitive:plane' look-at="[gps-new-camera]"
+      gps-new-entity-place="latitude: 35.42409122191328; longitude: 139.54206104756895" scale="10 10 10"></a-entity>
+      
+    <div style="width: 100%; height: 100%; position: fixed; left: 0; top: 0; z-index: -1; overflow: hidden">
+      <div id="htmlElement" style="background: #F8F8F8; color: #333; font-size: 48px">Hello, HTML!</div>
+    </div>
     <!-- 本館東 -->
     <a-entity material='color: turquoise' geometry='primitive:box'
       gps-new-entity-place="latitude:35.4240562; longitude:139.5426021" scale="10 10 10"></a-entity>
