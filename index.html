@@ -17,8 +17,6 @@
 </head>
 
 <body>
-  <p>testtest<br>testing--</p>
-  <button>osetukana</button>
   <a-scene vr-mode-ui='enabled: false' arjs='sourceType: webcam; videoTexture: true; debugUIEnabled: false'
     renderer='antialias: true; alpha: true' cursor='rayOrigin: mouse' raycaster='near: 0; far: 50000'>
 
@@ -27,10 +25,11 @@
     <!--a-entity gltf-model="hogehoge.glb"
       gps-new-entity-place="latitude: 35.42409122191328; longitude: 139.54206104756895" scale="3 3 3"
       look-at="[gps-new-camera]" animation-mixer></a-entity-->
-      
+
 
     <a-entity material='color: turquoise' geometry='primitive:plane'
-      gps-new-entity-place="latitude:35.4240562; longitude:139.5426021" scale="3 3 3" look-at="[gps-new-camera]"></a-entity>
+      gps-new-entity-place="latitude:35.4240562; longitude:139.5426021" scale="3 3 3"
+      look-at="[gps-new-camera]"></a-entity>
 
     <a-text value="Mtfuji" look-at="[gps-new-camera]" scale="400000 400000 400000"
       gps-new-entity-place="latitude: 35.35928735806318; longitude: 138.7269210783194" position="0 0 0" color="black"
