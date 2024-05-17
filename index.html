@@ -13,7 +13,6 @@
     src='https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js'></script>
   <script src="https://unpkg.com/aframe-look-at-component@0.8.0/dist/aframe-look-at-component.min.js"></script>
   <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
-  <script src="https://supereggbert.github.io/aframe-htmlembed-component/dist/build.js"></script>
   <script src="index.js"></script>
   <script src="clicker.js"></script>
 
@@ -22,7 +21,7 @@
 <body>
 
 
-  <div id="htmlElement" class ="hide" htmlembed>
+  <div id="htmlElement" class ="hide">
     <h1>日本語打てるし<br>なんでもできるv4</h1>
   </div>
 
@@ -34,10 +33,6 @@
 
     <a-entity material="shader:html; target: #htmlElement" geometry='primitive:plane' look-at="[gps-new-camera]"
       gps-new-entity-place="latitude: 35.42409122191328; longitude: 139.54206104756895" scale="10 10 10"></a-entity>
-
-      <a-entity 
-      gps-new-entity-place="latitude: 35.42417763081021; longitude: 139.54245871577797" scale="10 10 10"><p>testtest<br>testtest</p></a-entity>
-      
 
     <!-- 本館東 -->
     <a-entity class="boxes" material='color: turquoise' geometry='primitive:box'
