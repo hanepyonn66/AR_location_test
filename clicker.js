@@ -40,6 +40,7 @@ AFRAME.registerComponent('click_setting2', {
       setting2.setAttribute('material', 'color: red');
       const setting3 = document.querySelector('#setting3');
       setting3.setAttribute('material', 'color: black');
+      const planes = document.querySelectorAll('.planes');
       planes.forEach(entity => {
         const isVisible = entity.getAttribute('visible');
         entity.setAttribute('visible', !isVisible);
