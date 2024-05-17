@@ -1,14 +1,339 @@
 #htmlElement {
-    height: 200px;
-    width: 200px;
+    height: 2000px;
+    width: 2000px;
+    font-size: 160px;
     z-index: -50;
     background: rgb(102, 112, 199);
-    position: relative; 
+    position: relative;
 }
 
 #htmlElement img {
-    max-width: 100%; /* 親要素の幅内に収まるようにする */
-    max-height: 100%; /* 親要素の高さ内に収まるようにする */
-    display: block; /* インライン要素として表示される可能性がある場合、ブロック要素に変換 */
-    margin: auto; /* 画像を水平方向に中央揃えにする */
+    max-width: 100%;
+    /* 親要素の幅内に収まるようにする */
+    max-height: 100%;
+    /* 親要素の高さ内に収まるようにする */
+    display: block;
+    /* インライン要素として表示される可能性がある場合、ブロック要素に変換 */
+    margin: auto;
+    /* 画像を水平方向に中央揃えにする */
+}
+
+#MainBuildingEast {
+    height: 2000px;
+    width: 2000px;
+    font-size: 120px;
+    z-index: -50;
+    background: rgb(142, 140, 198);
+    position: relative;
+}
+
+#MainBuildingCentral {
+    height: 2000px;
+    width: 2000px;
+    font-size: 120px;
+    z-index: -50;
+    background: rgb(167, 145, 195);
+    position: relative;
+}
+
+#MainBuildingWest {
+    height: 2000px;
+    width: 2000px;
+    font-size: 120px;
+    z-index: -50;
+    background: rgb(163, 140, 180);
+    position: relative;
+}
+
+#WoodDeck {
+    height: 2000px;
+    width: 2000px;
+    font-size: 120px;
+    z-index: -50;
+    background: rgb(151, 164, 141);
+    position: relative;
+}
+
+#MaterialsLabEast {
+    height: 2000px;
+    width: 2000px;
+    font-size: 120px;
+    z-index: -50;
+    background: rgb(164, 155, 143);
+    position: relative;
+}
+
+#MaterialsLabWest {
+    height: 2000px;
+    width: 2000px;
+    font-size: 120px;
+    z-index: -50;
+    background: rgb(151, 136, 169);
+    position: relative;
+}
+
+#DetailedTest1 {
+    height: 2000px;
+    width: 2000px;
+    font-size: 120px;
+    z-index: -50;
+    background: rgb(220, 183, 138);
+    position: relative;
+}
+
+#DetailedTest2 {
+    height: 2000px;
+    width: 2000px;
+    font-size: 120px;
+    z-index: -50;
+    background: rgb(215, 207, 145);
+    position: relative;
+}
+
+#DetailedTest3 {
+    height: 2000px;
+    width: 2000px;
+    font-size: 120px;
+    z-index: -50;
+    background: rgb(190, 190, 190);
+    position: relative;
+}
+
+#DetailedTest4 {
+    height: 2000px;
+    width: 2000px;
+    font-size: 120px;
+    z-index: -50;
+    background: rgb(92, 105, 113);
+    position: relative;
+}
+
+#OceanAndRiverLab {
+    height: 2000px;
+    width: 2000px;
+    font-size: 120px;
+    z-index: -50;
+    background: rgb(222, 156, 170);
+    position: relative;
+}
+
+#FireLab {
+    height: 2000px;
+    width: 2000px;
+    font-size: 120px;
+    z-index: -50;
+    background: rgb(191, 144, 115);
+    position: relative;
+}
+
+#SoundAndElectromagneticLab {
+    height: 2000px;
+    width: 2000px;
+    font-size: 120px;
+    z-index: -50;
+    background: rgb(192, 192, 192);
+    position: relative;
+}
+
+#AcousticsLab {
+    height: 2000px;
+    width: 2000px;
+    font-size: 120px;
+    z-index: -50;
+    background: rgb(0, 0, 0);
+    position: relative;
+}
+
+#WindSoundLab {
+    height: 2000px;
+    width: 2000px;
+    font-size: 120px;
+    z-index: -50;
+    background: rgb(255, 0, 0);
+    position: relative;
+}
+
+#WindLab {
+    height: 2000px;
+    width: 2000px;
+    font-size: 120px;
+    z-index: -50;
+    background: rgb(255, 255, 0);
+    position: relative;
+}
+
+#MechanicalConstructionLab {
+    height: 2000px;
+    width: 2000px;
+    font-size: 120px;
+    z-index: -50;
+    background: rgb(0, 128, 0);
+    position: relative;
+}
+
+#HumanAndSpaceLab {
+    height: 2000px;
+    width: 2000px;
+    font-size: 120px;
+    z-index: -50;
+    background: rgb(0, 0, 255);
+    position: relative;
+}
+
+#SoilAndSpaceLab {
+    height: 2000px;
+    width: 2000px;
+    font-size: 120px;
+    z-index: -50;
+    background: rgb(255, 165, 0);
+    position: relative;
+}
+
+#StructureLab {
+    height: 2000px;
+    width: 2000px;
+    font-size: 120px;
+    z-index: -50;
+    background: rgb(255, 255, 255);
+    position: relative;
+}
+
+#MainBuildingEast img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    margin: auto;
+}
+
+#MainBuildingCentral img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    margin: auto;
+}
+
+#MainBuildingWest img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    margin: auto;
+}
+
+#WoodDeck img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    margin: auto;
+}
+
+#MaterialsLabEast img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    margin: auto;
+}
+
+#MaterialsLabWest img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    margin: auto;
+}
+
+#DetailedTest1 img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    margin: auto;
+}
+
+#DetailedTest2 img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    margin: auto;
+}
+
+#DetailedTest3 img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    margin: auto;
+}
+
+#DetailedTest4 img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    margin: auto;
+}
+
+#OceanAndRiverLab img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    margin: auto;
+}
+
+#FireLab img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    margin: auto;
+}
+
+#SoundAndElectromagneticLab img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    margin: auto;
+}
+
+#AcousticsLab img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    margin: auto;
+}
+
+#WindSoundLab img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    margin: auto;
+}
+
+#WindLab img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    margin: auto;
+}
+
+#MechanicalConstructionLab img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    margin: auto;
+}
+
+#HumanAndSpaceLab img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    margin: auto;
+}
+
+#SoilAndSpaceLab img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    margin: auto;
+}
+
+#StructureLab img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    margin: auto;
 }
