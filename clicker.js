@@ -17,7 +17,16 @@ AFRAME.registerComponent('click_setting1', {
       const setting3 = document.querySelector('#setting3');
       setting3.setAttribute('material', 'color: black');
       //テキストとその色を変える
-
+      const entities = document.querySelectorAll('.planes');
+      entities.forEach(entity => {
+        const isVisible = entity.getAttribute('visible');
+        entity.setAttribute('visible', !isVisible);
+      });
+      const entities = document.querySelectorAll('.boxes');
+      entities.forEach(entity => {
+        const isVisible = entity.getAttribute('visible');
+        entity.setAttribute('visible', !isVisible);
+      });
     });
   }
 });

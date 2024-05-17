@@ -1,6 +1,10 @@
 window.onload = () => {
     let testEntityAdded = false;
-
+    const entities = document.querySelectorAll('.planes');
+    entities.forEach(entity => {
+      const isVisible = entity.getAttribute('visible');
+      entity.setAttribute('visible', !isVisible);
+    });
     const el = document.querySelector("[gps-new-camera]");
 
     el.addEventListener("gps-camera-update-position", e => {
@@ -12,7 +16,7 @@ window.onload = () => {
             setting2.setAttribute("id",'setting2');
             setting2.setAttribute("geometry",'primitive:box');
             setting2.setAttribute("scale", "5 5 5");
-            setting2.setAttribute('material', 'color: red');
+            setting2.setAttribute('material', 'color: black');
             setting2.setAttribute('gps-new-entity-place', {
                 latitude: e.detail.position.latitude,
                 longitude: e.detail.position.longitude
@@ -27,7 +31,7 @@ window.onload = () => {
             setting1.setAttribute("id",'setting1');
             setting1.setAttribute("geometry", 'primitive: box');
             setting1.setAttribute("scale", "5 5 5");
-            setting1.setAttribute('material', 'color: black');
+            setting1.setAttribute('material', 'color: red');
             setting1.setAttribute('gps-new-entity-place', {
                 latitude: e.detail.position.latitude + 0.0001,
                 longitude: e.detail.position.longitude
