@@ -15,14 +15,7 @@
   <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
   <script src="index.js"></script>
   <script src="clicker.js"></script>
-  <style>
-    #htmlElement {
-      height: 2000px;
-      width: 2000px;
-      z-index: -50;
-      background-color: #FFF;
-    }
-  </style>
+
 </head>
 
 <body>
@@ -36,7 +29,7 @@
 
     <a-camera gps-new-camera='gpsMinDistance: 2'></a-camera>
 
-    
+
     <a-entity material="shader:html; target: #htmlElement" geometry='primitive:plane' look-at="[gps-new-camera]"
       gps-new-entity-place="latitude: 35.42409122191328; longitude: 139.54206104756895" scale="10 10 10"></a-entity>
 
