@@ -21,7 +21,9 @@
 <body>
 
 
-  <div id="htmlElement"><h1>日本語打てるし<br>なんでもできる</h1></div>
+  <div id="htmlElement">
+    <h1>日本語打てるし<br>なんでもできる</h1>
+  </div>
 
 
   <a-scene vr-mode-ui='enabled: false' arjs='sourceType: webcam; videoTexture: true; debugUIEnabled: false'
@@ -35,160 +37,162 @@
 
 
     <!-- 本館東 -->
-    <a-entity material='color: turquoise' geometry='primitive:box'
+    <a-entity class="boxes" material='color: turquoise' geometry='primitive:box'
       gps-new-entity-place="latitude:35.4240562; longitude:139.5426021" scale="10 10 10"></a-entity>
 
     <!-- 本館中央 -->
-    <a-entity material='color: magenta' geometry='primitive: box'
+    <a-entity class="boxes" material='color: magenta' geometry='primitive: box'
       gps-new-entity-place="latitude:35.4238988; longitude:139.5423822" scale="10 10 10"></a-entity>
 
     <!-- 本館西 -->
-    <a-entity material='color: olive' geometry='primitive: box'
+    <a-entity class="boxes" material='color: olive' geometry='primitive: box'
       gps-new-entity-place="latitude:35.4237131; longitude:139.5421153" scale="10 10 10"></a-entity>
 
     <!-- ウッドデッキ -->
-    <a-entity material='color: lime' geometry='primitive: box'
+    <a-entity class="boxes" material='color: lime' geometry='primitive: box'
       gps-new-entity-place="latitude:35.4238595; longitude:139.5419704" scale="10 10 10" clicker></a-entity>
 
     <!-- 材料ラボ東 -->
-    <a-entity material='color: cyan' geometry='primitive: box'
+    <a-entity class="boxes" material='color: cyan' geometry='primitive: box'
       gps-new-entity-place="latitude:35.4240518; longitude:139.5415929" scale="10 10 10"></a-entity>
 
     <!-- 材料ラボ西 -->
-    <a-entity material='color: purple' geometry='primitive: box'
+    <a-entity class="boxes" material='color: purple' geometry='primitive: box'
       gps-new-entity-place="latitude:35.4241725; longitude:139.5417332" scale="10 10 10"></a-entity>
 
     <!-- 本館中央詳細テスト1 -->
-    <a-entity material='color: gold' geometry='primitive: box'
+    <a-entity class="boxes" material='color: gold' geometry='primitive: box'
       gps-new-entity-place="latitude:35.4240303; longitude:139.542414" scale="1 10 1"></a-entity>
 
     <!-- 本館中央詳細テスト2 -->
-    <a-entity material='color: champagne' geometry='primitive: box'
+    <a-entity class="boxes" material='color: champagne' geometry='primitive: box'
       gps-new-entity-place="latitude:35.4239909; longitude:139.5423523" scale="1 10 1"></a-entity>
 
     <!-- 本館中央詳細テスト3 -->
-    <a-entity material='color: gray' geometry='primitive: box'
+    <a-entity class="boxes" material='color: gray' geometry='primitive: box'
       gps-new-entity-place="latitude:35.4239265; longitude:139.5422665" scale="1 10 1"></a-entity>
 
     <!-- 本館中央詳細テスト4 -->
-    <a-entity material='color: indigo' geometry='primitive: box'
+    <a-entity class="boxes" material='color: indigo' geometry='primitive: box'
       gps-new-entity-place="latitude:35.4238653; longitude:139.5421874" scale="1 10 1"></a-entity>
 
     <!-- 海と川のラボ -->
-    <a-entity material='color: pink' geometry='primitive: box'
+    <a-entity class="boxes" material='color: pink' geometry='primitive: box'
       gps-new-entity-place="latitude:35.4244774; longitude:139.541322" scale="10 10 10"></a-entity>
 
     <!-- 火災のラボ -->
-    <a-entity material='color: brown' geometry='primitive: box'
+    <a-entity class="boxes" material='color: brown' geometry='primitive: box'
       gps-new-entity-place="latitude:35.4249605; longitude:139.5412872" scale="10 10 10"></a-entity>
 
     <!-- 音と電磁のラボ -->
-    <a-entity material='color: silver' geometry='primitive: box'
+    <a-entity class="boxes" material='color: silver' geometry='primitive: box'
       gps-new-entity-place="latitude:35.4252686; longitude:139.5416519" scale="10 10 10"></a-entity>
 
     <!-- 音響のラボ -->
-    <a-entity material='color: black' geometry='primitive: box'
+    <a-entity class="boxes" material='color: black' geometry='primitive: box'
       gps-new-entity-place="latitude:35.4251834; longitude:139.5419202" scale="10 10 10"></a-entity>
 
     <!-- 風音のラボ -->
-    <a-entity material='color: red' geometry='primitive: box'
+    <a-entity class="boxes" material='color: red' geometry='primitive: box'
       gps-new-entity-place="latitude:35.4250632; longitude:139.5421964" scale="10 10 10"></a-entity>
 
     <!-- 風のラボ -->
-    <a-entity material='color: yellow' geometry='primitive: box'
+    <a-entity class="boxes" material='color: yellow' geometry='primitive: box'
       gps-new-entity-place="latitude:35.424884; longitude:139.5424566" scale="10 10 10"></a-entity>
 
     <!-- 機械化施工のラボ -->
-    <a-entity material='color: green' geometry='primitive: box'
+    <a-entity class="boxes" material='color: green' geometry='primitive: box'
       gps-new-entity-place="latitude:35.4245736; longitude:139.5416278" scale="10 10 10"></a-entity>
 
     <!-- 人と空間のラボ -->
-    <a-entity material='color: blue' geometry='primitive: box'
+    <a-entity class="boxes" material='color: blue' geometry='primitive: box'
       gps-new-entity-place="latitude:35.4243026; longitude:139.5420838" scale="10 10 10"></a-entity>
 
     <!-- 土と空間のラボ -->
-    <a-entity material='color: orange' geometry='primitive: box'
+    <a-entity class="boxes" material='color: orange' geometry='primitive: box'
       gps-new-entity-place="latitude:35.4244534; longitude:139.5419202" scale="10 10 10"></a-entity>
 
     <!-- 構造のラボ -->
-    <a-entity material='color: white' geometry='primitive: box'
+    <a-entity class="boxes" material='color: white' geometry='primitive: box'
       gps-new-entity-place="latitude:35.4247791; longitude:139.5421455" scale="10 10 10"></a-entity>
 
-    <a-text value="Main Building East" look-at="[gps-new-camera]" scale="10 10 10"
+    <a-text class="boxes" value="Main Building East" look-at="[gps-new-camera]" scale="10 10 10"
       gps-new-entity-place="latitude: 35.4240562; longitude: 139.5426021;" position="0 10 0" color="black"
       align="center"></a-text>
 
-    <a-text value="Main Building Central" look-at="[gps-new-camera]" scale="10 10 10"
+    <a-text class="boxes" value="Main Building Central" look-at="[gps-new-camera]" scale="10 10 10"
       gps-new-entity-place="latitude: 35.4238988; longitude: 139.5423822;" position="0 10 0" color="black"
       align="center"></a-text>
 
-    <a-text value="Main Building West" look-at="[gps-new-camera]" scale="10 10 10"
+    <a-text class="boxes" value="Main Building West" look-at="[gps-new-camera]" scale="10 10 10"
       gps-new-entity-place="latitude: 35.4237131; longitude: 139.5421153;" position="0 10 0" color="black"
       align="center"></a-text>
 
-    <a-text value="Wood Deck" look-at="[gps-new-camera]" scale="10 10 10"
+    <a-text class="boxes" value="Wood Deck" look-at="[gps-new-camera]" scale="10 10 10"
       gps-new-entity-place="latitude: 35.4238595; longitude: 139.5419704;" position="0 10 0" color="black"
       align="center"></a-text>
 
-    <a-text value="Materials Lab East" look-at="[gps-new-camera]" scale="10 10 10"
+    <a-text class="boxes" value="Materials Lab East" look-at="[gps-new-camera]" scale="10 10 10"
       gps-new-entity-place="latitude: 35.4240518; longitude: 139.5415929;" position="0 10 0" color="black"
       align="center"></a-text>
 
-    <a-text value="Materials Lab West" look-at="[gps-new-camera]" scale="10 10 10"
+    <a-text class="boxes" value="Materials Lab West" look-at="[gps-new-camera]" scale="10 10 10"
       gps-new-entity-place="latitude: 35.4241725; longitude: 139.5417332;" position="0 10 0" color="black"
       align="center"></a-text>
 
-    <a-text value="密度テスト 1" look-at="[gps-new-camera]" scale="1 10 1"
+    <a-text class="boxes" value="密度テスト 1" look-at="[gps-new-camera]" scale="1 10 1"
       gps-new-entity-place="latitude: 35.4240303; longitude: 139.542414;" position="0 10 0" color="black" align="center"
       font="noto-sans-cjk-jp-msdf.json" font-image="noto-sans-cjk-jp-msdf.png"></a-text>
 
-    <a-text value="密度テスト 2" look-at="[gps-new-camera]" scale="10 10 10"
+    <a-text class="boxes" value="密度テスト 2" look-at="[gps-new-camera]" scale="10 10 10"
       gps-new-entity-place="latitude: 35.4239909; longitude: 139.5423523;" position="0 10 0" color="black"
       align="center" font="noto-sans-cjk-jp-msdf.json" font-image="noto-sans-cjk-jp-msdf.png"></a-text>
 
-    <a-text value="密度テスト 3" look-at="[gps-new-camera]" scale="10 10 10"
+    <a-text class="boxes" value="密度テスト 3" look-at="[gps-new-camera]" scale="10 10 10"
       gps-new-entity-place="latitude: 35.4239265; longitude: 139.5422665;" position="0 10 0" color="black"
       align="center" font="noto-sans-cjk-jp-msdf.json" font-image="noto-sans-cjk-jp-msdf.png"></a-text>
 
-    <a-text value="密度テスト 4" look-at="[gps-new-camera]" scale="10 10 10"
+    <a-text class="boxes" value="密度テスト 4" look-at="[gps-new-camera]" scale="10 10 10"
       gps-new-entity-place="latitude: 35.4238653; longitude: 139.5421874;" position="0 10 0" color="black"
       align="center" font="noto-sans-cjk-jp-msdf.json" font-image="noto-sans-cjk-jp-msdf.png"></a-text>
 
-    <a-text value="Ocean and River Lab" look-at="[gps-new-camera]" scale="10 10 10"
+    <a-text class="boxes" value="Ocean and River Lab" look-at="[gps-new-camera]" scale="10 10 10"
       gps-new-entity-place="latitude: 35.4244774; longitude: 139.541322;" position="0 10 0" color="black"
       align="center"></a-text>
 
-    <a-text value="Fire Lab" look-at="[gps-new-camera]" scale="10 10 10"
+    <a-text class="boxes" value="Fire Lab" look-at="[gps-new-camera]" scale="10 10 10"
       gps-new-entity-place="latitude: 35.4249605; longitude: 139.5412872;" position="0 10 0" color="black"
       align="center"></a-text>
 
-    <a-text value="Sound and Electromagnetic Lab" look-at="[gps-new-camera]" scale="10 10 10"
+    <a-text class="boxes" value="Sound and Electromagnetic Lab" look-at="[gps-new-camera]" scale="10 10 10"
       gps-new-entity-place="latitude: 35.4252686; longitude: 139.5416519;" position="0 10 0" color="black"
       align="center"></a-text>
 
-    <a-text value="Acoustics Lab" look-at="[gps-new-camera]" scale="10 10 10"
+    <a-text class="boxes" value="Acoustics Lab" look-at="[gps-new-camera]" scale="10 10 10"
       gps-new-entity-place="latitude: 35.4251834; longitude: 139.5419202;" position="0 10 0" color="black"
       align="center"></a-text>
 
-    <a-text value="Wind Sound Lab" look-at="[gps-new-camera]" scale="10 10 10"
+    <a-text class="boxes" value="Wind Sound Lab" look-at="[gps-new-camera]" scale="10 10 10"
       gps-new-entity-place="latitude: 35.4250632; longitude: 139.5421964;" position="0 10 0" color="black"
       align="center"></a-text>
 
-    <a-text value="Wind Lab" look-at="[gps-new-camera]" scale="10 10 10"
+    <a-text class="boxes" value="Wind Lab" look-at="[gps-new-camera]" scale="10 10 10"
       gps-new-entity-place="latitude: 35.424884; longitude: 139.5424566;" position="0 10 0" color="black"
       align="center"></a-text>
 
-    <a-text value="Mechanical Construction Lab" look-at="[gps-new-camera]" scale="10 10 10"
+    <a-text class="boxes" value="Mechanical Construction Lab" look-at="[gps-new-camera]" scale="10 10 10"
       gps-new-entity-place="latitude: 35.4245736; longitude: 139.5416278;" position="0 10 0" color="black"
       align="center"></a-text>
 
-    <a-text value="Human and Space Lab" look-at="[gps-new-camera]" scale="10 10 10"
+    <a-text class="boxes" value="Human and Space Lab" look-at="[gps-new-camera]" scale="10 10 10"
       gps-new-entity-place="latitude: 35.4243026; longitude: 139.5420838;" position="0 10 0" color="black"
       align="center"></a-text>
-    <a-text value="Soil and Space Lab" look-at="[gps-new-camera]" scale="10 10 10"
+      
+    <a-text class="boxes" value="Soil and Space Lab" look-at="[gps-new-camera]" scale="10 10 10"
       gps-new-entity-place="latitude: 35.4244534; longitude: 139.5419202;" position="0 10 0" color="black"
       align="center"></a-text>
-    <a-text value="Structure Lab" look-at="[gps-new-camera]" scale="10 10 10"
+
+    <a-text class="boxes" value="Structure Lab" look-at="[gps-new-camera]" scale="10 10 10"
       gps-new-entity-place="latitude: 35.4247791; longitude: 139.5421455;" position="0 10 0" color="black"
       align="center"></a-text>
 
