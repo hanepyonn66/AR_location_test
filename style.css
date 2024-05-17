@@ -1,7 +1,7 @@
 #htmlElement {
-  height: 2000px;
-  width: 2000px;
+  height: 200px;
+  width: 200px;
   z-index: -50;
   background-color: #FFF;
-  font-size: 1000%;
+  font-size: 100%;
 }
