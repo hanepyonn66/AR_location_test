@@ -2,7 +2,7 @@
     height: 200px;
     width: 200px;
     z-index: -50;
-    background: red;
+    background: rgb(102, 112, 199);
     position: relative; 
 }
 
