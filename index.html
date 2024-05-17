@@ -6,23 +6,43 @@
   <meta charset="UTF-8">
   <title>AR.js A-Frame Location-based</title>
   <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+  <script src="aframe-html-shader.min.js"></script>
   <script type='text/javascript'
     src='https://raw.githack.com/AR-js-org/AR.js/master/three.js/build/ar-threex-location-only.js'></script>
   <script type='text/javascript'
     src='https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js'></script>
   <script src="https://unpkg.com/aframe-look-at-component@0.8.0/dist/aframe-look-at-component.min.js"></script>
-
+  <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+  <script src="index.js"></script>
+  <script src="clicker.js"></script>
+  <style>
+    #htmlElement {
+      height: 2000px;
+      width: 2000px;
+      z-index: -50;
+      background-color: #FFF;
+    }
+  </style>
 </head>
 
 <body>
-  
-  <a-scene vr-mode-ui='enabled: false' arjs='sourceType: webcam; videoTexture: true; debugUIEnabled: false'
-    renderer='antialias: true; alpha: true'>
 
-    <a-camera gps-new-camera='gpsMinDistance: 5'></a-camera>
+
+  <div id="htmlElement"><h1>Hello, HTML!v6</h1></div>
+
+
+  <a-scene vr-mode-ui='enabled: false' arjs='sourceType: webcam; videoTexture: true; debugUIEnabled: false'
+    renderer='antialias: true; alpha: true' cursor='rayOrigin: mouse' raycaster='near: 0; far: 50000'>
+
+    <a-camera gps-new-camera='gpsMinDistance: 2'></a-camera>
+
+    
+    <a-entity material="shader:html; target: #htmlElement" geometry='primitive:plane' look-at="[gps-new-camera]"
+      gps-new-entity-place="latitude: 35.42409122191328; longitude: 139.54206104756895" scale="10 10 10"></a-entity>
+
 
     <!-- 本館東 -->
-    <a-entity material='color: turquoise' geometry='primitive: box'
+    <a-entity material='color: turquoise' geometry='primitive:box'
       gps-new-entity-place="latitude:35.4240562; longitude:139.5426021" scale="10 10 10"></a-entity>
 
     <!-- 本館中央 -->
@@ -35,7 +55,7 @@
 
     <!-- ウッドデッキ -->
     <a-entity material='color: lime' geometry='primitive: box'
-      gps-new-entity-place="latitude:35.4238595; longitude:139.5419704" scale="10 10 10"></a-entity>
+      gps-new-entity-place="latitude:35.4238595; longitude:139.5419704" scale="10 10 10" clicker></a-entity>
 
     <!-- 材料ラボ東 -->
     <a-entity material='color: cyan' geometry='primitive: box'
@@ -183,6 +203,8 @@
     <!--<a-text value="日本語あいうえおかきくけこさしすせそたちつてと" font="noto-sans-cjk-jp-msdf.json" font-image="noto-sans-cjk-jp-msdf.png" look-at="[gps-new-camera]" scale="30 30 30" gps-new-entity-place="latitude:35.4247791; longitude:139.5421455"></a-text>
         -->
   </a-scene>
+
+
 </body>
 
 </html>

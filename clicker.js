@@ -1,11 +1,50 @@
 AFRAME.registerComponent('clicker', {
-    init: function() {
-        const cameraEl = document.querySelector('a-camera');
-        let position, cameraPos;
-        this.el.addEventListener('click', e => {
-            position = this.el.object3D.position; 
-            cameraPos = cameraEl.object3D.position;
-            alert(`Box clicked! Position is: ${position.x} ${position.y} ${position.z}; camera pos ${cameraPos.x} ${cameraPos.y} ${cameraPos.z}`);
-        });
-    }
+  init: function () {
+    this.el.addEventListener('click', e => {
+      alert('Box clicked!');
+    });
+  }
+});
+
+AFRAME.registerComponent('click_setting1', {
+  init: function () {
+    this.el.addEventListener('click', e => {
+      //箱の色を変える
+      const setting1 = document.querySelector('#setting1');
+      setting1.setAttribute('material', 'color: red');
+      const setting2 = document.querySelector('#setting2');
+      setting2.setAttribute('material', 'color: black');
+      const setting3 = document.querySelector('#setting3');
+      setting3.setAttribute('material', 'color: black');
+      //テキストとその色を変える
+
+    });
+  }
+});
+
+AFRAME.registerComponent('click_setting2', {
+  init: function () {
+    this.el.addEventListener('click', e => {
+      const setting1 = document.querySelector('#setting1');
+      setting1.setAttribute('material', 'color: black');
+      const setting2 = document.querySelector('#setting2');
+      setting2.setAttribute('material', 'color: red');
+      const setting3 = document.querySelector('#setting3');
+      setting3.setAttribute('material', 'color: black');
+    });
+  }
+});
+
+AFRAME.registerComponent('click_setting3', {
+  init: function () {
+    this.el.addEventListener('click', e => {
+      const setting1 = document.querySelector('#setting1');
+      setting1.setAttribute('material', 'color: black');
+      const setting2 = document.querySelector('#setting2');
+      setting2.setAttribute('material', 'color: black');
+      const setting3 = document.querySelector('#setting3');
+      setting3.setAttribute('material', 'color: red');
+      
+    });
+  }
 });

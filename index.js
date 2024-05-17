@@ -1,53 +1,102 @@
 window.onload = () => {
-    let testEntitiesAdded = false;
+    let testEntityAdded = false;
+
     const el = document.querySelector("[gps-new-camera]");
+
     el.addEventListener("gps-camera-update-position", e => {
-        if(!testEntitiesAdded) {
-            alert(`Initial position: ${e.detail.position.longitude} ${e.detail.position.latitude}`);
-            // Add four boxes to the north (red), south (yellow), west (blue)
-            // and east (red) of the initial GPS position
-            const properties = [{
-                    color: 'red',
-                    latDis: 0.001,
-                    lonDis: 0
-                },{
-                    color: 'yellow',
-                    latDis: -0.001,
-                    lonDis: 0
-                },{
-                    color: 'blue',
-                    latDis: 0,
-                    lonDis: -0.001
-                },{
-                    color: 'green',
-                    latDis: 0,
-                    lonDis: 0.001
-                }
-            ];
-            for(const prop of properties) {
-                const entity = document.createElement("a-box");
-                entity.setAttribute("scale", {
-                    x: 20, 
-                    y: 20,
-                    z: 20
-                });
-                entity.setAttribute('material', { color: prop.color } );
-                entity.setAttribute('gps-new-entity-place', {
-                    latitude: e.detail.position.latitude + prop.latDis,
-                    longitude: e.detail.position.longitude + prop.lonDis
-                });
-                entity.setAttribute('clicker', { });                
-                document.querySelector("a-scene").appendChild(entity);
-            }
-            testEntitiesAdded = true;
+        if (!testEntityAdded) {
+            //alert(`Got first GPS position: lon ${e.detail.position.longitude} lat ${e.detail.position.latitude}`);
+
+            // setting2
+            const setting2 = document.createElement("a-entity");
+            setting2.setAttribute("id",'setting2');
+            setting2.setAttribute("geometry",'primitive:box');
+            setting2.setAttribute("scale", "5 5 5");
+            setting2.setAttribute('material', 'color: red');
+            setting2.setAttribute('gps-new-entity-place', {
+                latitude: e.detail.position.latitude,
+                longitude: e.detail.position.longitude
+            });
+            setting2.setAttribute("click_setting2","");
+            setting2.setAttribute('position', "0 50 0");
+            document.querySelector("a-scene").appendChild(setting2);
+
+
+            // setting1
+            const setting1 = document.createElement("a-entity");
+            setting1.setAttribute("id",'setting1');
+            setting1.setAttribute("geometry", 'primitive: box');
+            setting1.setAttribute("scale", "5 5 5");
+            setting1.setAttribute('material', 'color: black');
+            setting1.setAttribute('gps-new-entity-place', {
+                latitude: e.detail.position.latitude + 0.0001,
+                longitude: e.detail.position.longitude
+            });
+            setting1.setAttribute("click_setting1","");
+            setting1.setAttribute('position', "0 50 0");
+            document.querySelector("a-scene").appendChild(setting1);
+
+            // setting3
+            const setting3 = document.createElement("a-entity");
+            setting3.setAttribute("id",'setting3');
+            setting3.setAttribute("geometry", 'primitive: box');
+            setting3.setAttribute("scale", "5 5 5");
+            setting3.setAttribute('material', 'color: black');
+            setting3.setAttribute('gps-new-entity-place', {
+                latitude: e.detail.position.latitude - 0.0001,
+                longitude: e.detail.position.longitude
+            });
+            setting3.setAttribute("click_setting3","");
+            setting3.setAttribute('position', "0 50 0");
+            document.querySelector("a-scene").appendChild(setting3);
+
+
+            // t_setting1
+            const t_setting1 = document.createElement("a-text");
+            t_setting1.setAttribute("value", "setting1o");
+            t_setting1.setAttribute("scale", { x: 10, y: 10, z: 10 });
+            t_setting1.setAttribute("look-at", "[gps-new-camera]");
+            t_setting1.setAttribute("position", "20 40 0");
+            t_setting1.setAttribute("align", "center");
+            t_setting1.setAttribute('color', 'black');
+            t_setting1.setAttribute('gps-new-entity-place', {
+                latitude: e.detail.position.latitude + 0.0001,
+                longitude: e.detail.position.longitude
+            });
+            document.querySelector("a-scene").appendChild(t_setting1);
+
+            // t_setting2
+            const t_setting2 = document.createElement("a-text");
+            t_setting2.setAttribute("value", "setting2");
+            t_setting2.setAttribute("scale", { x: 10, y: 10, z: 10 });
+            t_setting2.setAttribute("look-at", "[gps-new-camera]");
+            t_setting2.setAttribute("position", "20 40 0");
+            t_setting2.setAttribute("align", "center");
+            t_setting2.setAttribute('color', 'black');
+            t_setting2.setAttribute('gps-new-entity-place', {
+                latitude: e.detail.position.latitude,
+                longitude: e.detail.position.longitude
+            });
+            //t_setting2.setAttribute('clicker');
+            document.querySelector("a-scene").appendChild(t_setting2);
+
+            // setting3
+            const t_setting3 = document.createElement("a-text");
+            t_setting3.setAttribute("value", "setting3");
+            t_setting3.setAttribute("scale", { x: 10, y: 10, z: 10 });
+            t_setting3.setAttribute("look-at", "[gps-new-camera]");
+            t_setting3.setAttribute("position", "20 40 0");
+            t_setting3.setAttribute("algin", "center");
+            t_setting3.setAttribute('color','black');
+            t_setting3.setAttribute('gps-new-entity-place', {
+                latitude: e.detail.position.latitude - 0.0001,
+                longitude: e.detail.position.longitude
+            });
+            document.querySelector("a-scene").appendChild(t_setting3);
+
+
+
         }
-    });
-
-    document.getElementById("go").addEventListener("click", e=> {
-        const lat = document.getElementById('lat').value;
-        const lon = document.getElementById('lon').value;
-        const minacc = document.getElementById('minacc').value;
-
-        el.setAttribute('gps-new-camera', { simulateLatitude: lat, simulateLongitude: lon, positionMinAccuracy: minacc } );
+        testEntityAdded = true;
     });
 };
