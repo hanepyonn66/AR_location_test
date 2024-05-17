@@ -56,7 +56,7 @@ window.onload = () => {
             t_setting1.setAttribute("value", "setting1o");
             t_setting1.setAttribute("scale", { x: 10, y: 10, z: 10 });
             t_setting1.setAttribute("look-at", "[gps-new-camera]");
-            t_setting1.setAttribute("position", "20 40 0");
+            t_setting1.setAttribute("position", "20 40 20");
             t_setting1.setAttribute("align", "center");
             t_setting1.setAttribute('color', 'black');
             t_setting1.setAttribute('gps-new-entity-place', {
@@ -70,7 +70,7 @@ window.onload = () => {
             t_setting2.setAttribute("value", "setting2");
             t_setting2.setAttribute("scale", { x: 10, y: 10, z: 10 });
             t_setting2.setAttribute("look-at", "[gps-new-camera]");
-            t_setting2.setAttribute("position", "20 40 0");
+            t_setting2.setAttribute("position", "20 40 20");
             t_setting2.setAttribute("align", "center");
             t_setting2.setAttribute('color', 'black');
             t_setting2.setAttribute('gps-new-entity-place', {
@@ -85,7 +85,7 @@ window.onload = () => {
             t_setting3.setAttribute("value", "setting3");
             t_setting3.setAttribute("scale", { x: 10, y: 10, z: 10 });
             t_setting3.setAttribute("look-at", "[gps-new-camera]");
-            t_setting3.setAttribute("position", "20 40 0");
+            t_setting3.setAttribute("position", "20 40 20");
             t_setting3.setAttribute("algin", "center");
             t_setting3.setAttribute('color','black');
             t_setting3.setAttribute('gps-new-entity-place', {
