@@ -3,12 +3,12 @@
     width: 200px;
     z-index: -50;
     background: red;
+    position: relative; 
 }
 
-.zeb_photo{
-    background-image: url('photo/zeb.jpg');
-    background-size: contain; /* 画像を要素内に収まるように調整 */
-    background-position: center; /* 画像を要素の中央に配置 */
-    width: 200px; /* 要素の幅 */
-    height: 150px; /* 要素の高さ */
+#htmlElement img {
+    max-width: 100%; /* 親要素の幅内に収まるようにする */
+    max-height: 100%; /* 親要素の高さ内に収まるようにする */
+    display: block; /* インライン要素として表示される可能性がある場合、ブロック要素に変換 */
+    margin: auto; /* 画像を水平方向に中央揃えにする */
 }
