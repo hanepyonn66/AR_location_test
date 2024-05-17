@@ -1,202 +1,111 @@
-#htmlElement {
-    height: 2000px;
-    width: 2000px;
-    font-size: 160px;
-    z-index: -50;
-    background: rgb(102, 112, 199);
-    position: relative;
-}
 
-#htmlElement img {
-    max-width: 100%;
-    /* 親要素の幅内に収まるようにする */
-    max-height: 100%;
-    /* 親要素の高さ内に収まるようにする */
-    display: block;
-    /* インライン要素として表示される可能性がある場合、ブロック要素に変換 */
-    margin: auto;
-    /* 画像を水平方向に中央揃えにする */
-}
-
-#MainBuildingEast {
-    height: 2000px;
-    width: 2000px;
-    font-size: 120px;
-    z-index: -50;
-    background: rgb(142, 140, 198);
-    position: relative;
-}
-
-#MainBuildingCentral {
-    height: 2000px;
-    width: 2000px;
-    font-size: 120px;
-    z-index: -50;
-    background: rgb(167, 145, 195);
-    position: relative;
-}
-
-#MainBuildingWest {
-    height: 2000px;
-    width: 2000px;
-    font-size: 120px;
-    z-index: -50;
-    background: rgb(163, 140, 180);
-    position: relative;
-}
-
-#WoodDeck {
-    height: 2000px;
-    width: 2000px;
-    font-size: 120px;
-    z-index: -50;
-    background: rgb(151, 164, 141);
-    position: relative;
-}
-
-#MaterialsLabEast {
-    height: 2000px;
-    width: 2000px;
-    font-size: 120px;
-    z-index: -50;
-    background: rgb(164, 155, 143);
-    position: relative;
-}
-
-#MaterialsLabWest {
-    height: 2000px;
-    width: 2000px;
-    font-size: 120px;
-    z-index: -50;
-    background: rgb(151, 136, 169);
-    position: relative;
-}
-
-#DetailedTest1 {
-    height: 2000px;
-    width: 2000px;
-    font-size: 120px;
-    z-index: -50;
-    background: rgb(220, 183, 138);
-    position: relative;
-}
-
-#DetailedTest2 {
-    height: 2000px;
-    width: 2000px;
-    font-size: 120px;
-    z-index: -50;
-    background: rgb(215, 207, 145);
-    position: relative;
-}
-
-#DetailedTest3 {
-    height: 2000px;
-    width: 2000px;
-    font-size: 120px;
-    z-index: -50;
-    background: rgb(190, 190, 190);
-    position: relative;
-}
-
-#DetailedTest4 {
-    height: 2000px;
-    width: 2000px;
-    font-size: 120px;
-    z-index: -50;
-    background: rgb(92, 105, 113);
-    position: relative;
-}
-
-#OceanAndRiverLab {
-    height: 2000px;
-    width: 2000px;
-    font-size: 120px;
-    z-index: -50;
-    background: rgb(222, 156, 170);
-    position: relative;
-}
-
-#FireLab {
-    height: 2000px;
-    width: 2000px;
-    font-size: 120px;
-    z-index: -50;
-    background: rgb(191, 144, 115);
-    position: relative;
-}
-
-#SoundAndElectromagneticLab {
-    height: 2000px;
-    width: 2000px;
-    font-size: 120px;
-    z-index: -50;
-    background: rgb(192, 192, 192);
-    position: relative;
-}
-
-#AcousticsLab {
-    height: 2000px;
-    width: 2000px;
-    font-size: 120px;
-    z-index: -50;
-    background: rgb(0, 0, 0);
-    position: relative;
-}
-
-#WindSoundLab {
-    height: 2000px;
-    width: 2000px;
-    font-size: 120px;
-    z-index: -50;
-    background: rgb(255, 0, 0);
-    position: relative;
-}
-
-#WindLab {
-    height: 2000px;
-    width: 2000px;
-    font-size: 120px;
-    z-index: -50;
-    background: rgb(255, 255, 0);
-    position: relative;
-}
-
-#MechanicalConstructionLab {
-    height: 2000px;
-    width: 2000px;
-    font-size: 120px;
-    z-index: -50;
-    background: rgb(0, 128, 0);
-    position: relative;
-}
-
-#HumanAndSpaceLab {
-    height: 2000px;
-    width: 2000px;
-    font-size: 120px;
-    z-index: -50;
-    background: rgb(0, 0, 255);
-    position: relative;
-}
-
-#SoilAndSpaceLab {
-    height: 2000px;
-    width: 2000px;
-    font-size: 120px;
-    z-index: -50;
-    background: rgb(255, 165, 0);
-    position: relative;
-}
-
-#StructureLab {
-    height: 2000px;
-    width: 2000px;
-    font-size: 120px;
-    z-index: -50;
-    background: rgb(255, 255, 255);
-    position: relative;
-}
+    #htmlElement {
+        height: 200px;
+        width: 200px;
+        font-size: 24px;
+        z-index: -50;
+        background: rgb(102, 112, 199);
+        position: relative;
+    }
+    
+    #htmlElement img {
+        max-width: 100%;
+        /* 親要素の幅内に収まるようにする */
+        max-height: 100%;
+        /* 親要素の高さ内に収まるようにする */
+        display: block;
+        /* インライン要素として表示される可能性がある場合、ブロック要素に変換 */
+        margin: auto;
+        /* 画像を水平方向に中央揃えにする */
+    }
+    
+    #MainBuildingEast, #MainBuildingCentral, #MainBuildingWest, #WoodDeck, #MaterialsLabEast, #MaterialsLabWest, #DetailedTest1, #DetailedTest2, #DetailedTest3, #DetailedTest4, #OceanAndRiverLab, #FireLab, #SoundAndElectromagneticLab, #AcousticsLab, #WindSoundLab, #WindLab, #MechanicalConstructionLab, #HumanAndSpaceLab, #SoilAndSpaceLab, #StructureLab {
+        height: 200px;
+        width: 200px;
+        font-size: 24px;
+        z-index: -50;
+        position: relative;
+    }
+    
+    #MainBuildingEast {
+        background: rgb(142, 140, 198);
+    }
+    
+    #MainBuildingCentral {
+        background: rgb(167, 145, 195);
+    }
+    
+    #MainBuildingWest {
+        background: rgb(163, 140, 180);
+    }
+    
+    #WoodDeck {
+        background: rgb(151, 164, 141);
+    }
+    
+    #MaterialsLabEast {
+        background: rgb(164, 155, 143);
+    }
+    
+    #MaterialsLabWest {
+        background: rgb(151, 136, 169);
+    }
+    
+    #DetailedTest1 {
+        background: rgb(220, 183, 138);
+    }
+    
+    #DetailedTest2 {
+        background: rgb(215, 207, 145);
+    }
+    
+    #DetailedTest3 {
+        background: rgb(190, 190, 190);
+    }
+    
+    #DetailedTest4 {
+        background: rgb(92, 105, 113);
+    }
+    
+    #OceanAndRiverLab {
+        background: rgb(222, 156, 170);
+    }
+    
+    #FireLab {
+        background: rgb(191, 144, 115);
+    }
+    
+    #SoundAndElectromagneticLab {
+        background: rgb(192, 192, 192);
+    }
+    
+    #AcousticsLab {
+        background: rgb(0, 0, 0);
+    }
+    
+    #WindSoundLab {
+        background: rgb(255, 0, 0);
+    }
+    
+    #WindLab {
+        background: rgb(255, 255, 0);
+    }
+    
+    #MechanicalConstructionLab {
+        background: rgb(0, 128, 0);
+    }
+    
+    #HumanAndSpaceLab {
+        background: rgb(0, 0, 255);
+    }
+    
+    #SoilAndSpaceLab {
+        background: rgb(255, 165, 0);
+    }
+    
+    #StructureLab {
+        background: rgb(255, 255, 255);
+    }
 
 #MainBuildingEast img {
     max-width: 100%;
