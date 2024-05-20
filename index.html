@@ -40,7 +40,7 @@
       <h2>本館西</h2>
       <img src="photo/MainBuildingWest.jpg" alt="本館西 写真">
     </div>
-
+<!--
     <div id="WoodDeck">
       <h2>ウッドデッキ</h2>
       <img src="photo/WoodDeck.jpg" alt="ウッドデッキ 写真">
@@ -125,6 +125,8 @@
       <h2>構造のラボ</h2>
       <img src="photo/StructureLab.jpg" alt="構造のラボ 写真">
     </div>
+
+  -->
   </div>
 
   <a-scene vr-mode-ui='enabled: false' arjs='sourceType: webcam; videoTexture: true; debugUIEnabled: false'
@@ -144,6 +146,8 @@
     <a-entity class="planes" material="shader:html; target: #MainBuildingWest" geometry='primitive:plane'
       look-at="[gps-new-camera]" gps-new-entity-place="latitude: 35.4237131; longitude: 139.5421153"
       scale="10 10 10"></a-entity>
+
+      <!--
     <a-entity class="planes" material="shader:html; target: #WoodDeck" geometry='primitive:plane'
       look-at="[gps-new-camera]" gps-new-entity-place="latitude: 35.4238595; longitude: 139.5419704"
       scale="10 10 10"></a-entity>
@@ -196,7 +200,7 @@
       look-at="[gps-new-camera]" gps-new-entity-place="latitude: 35.4247791; longitude: 139.5421455"
       scale="10 10 10"></a-entity>
 
-
+-->
     <!-- 本館東 -->
     <a-entity class="boxes" material='color: turquoise' geometry='primitive:box'
       gps-new-entity-place="latitude:35.4240562; longitude:139.5426021" scale="10 10 10">
