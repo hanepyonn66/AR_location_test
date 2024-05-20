@@ -4,7 +4,7 @@
     font-size: 24px;
     z-index: -50;
     background: rgb(102, 112, 199);
-    position: relative;
+    position: absolute;
 }
 
 #htmlElement img {
@@ -25,7 +25,7 @@
     width: 200px;
     font-size: 24px;
     z-index: -50;
-    position: relative;
+    position: absolute;
 }
 
 #MainBuildingCentral {
@@ -34,7 +34,7 @@
     width: 200px;
     font-size: 24px;
     z-index: -50;
-    position: relative;
+    position: absolute;
 }
 
 #MainBuildingWest {
@@ -43,7 +43,7 @@
     width: 200px;
     font-size: 24px;
     z-index: -50;
-    position: relative;
+    position: absolute;
 }
 
 #WoodDeck {
