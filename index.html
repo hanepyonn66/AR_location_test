@@ -203,7 +203,18 @@
 
   </a-scene>
 
+  <script>
+    var scene = document.querySelector('a-scene');
+    var run = function () {
+        document.getElementById("loader").classList.add("hidden");
+    }
 
+    if (scene.hasLoaded) {
+      run();
+    } else {
+      scene.addEventListener('loaded', run);
+    }
+</script>
 </body>
 
 </html>
