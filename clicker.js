@@ -17,7 +17,16 @@ AFRAME.registerComponent('click_setting1', {
       const setting3 = document.querySelector('#setting3');
       setting3.setAttribute('material', 'color: black');
       //テキストとその色を変える
-
+      const planes = document.querySelectorAll('.planes');
+      planes.forEach(entity => {
+        const isVisible = entity.getAttribute('visible');
+        entity.setAttribute('visible', !isVisible);
+      });
+      const boxes = document.querySelectorAll('.boxes');
+      boxes.forEach(entity => {
+        const isVisible = entity.getAttribute('visible');
+        entity.setAttribute('visible', !isVisible);
+      });
     });
   }
 });
@@ -31,7 +40,18 @@ AFRAME.registerComponent('click_setting2', {
       setting2.setAttribute('material', 'color: red');
       const setting3 = document.querySelector('#setting3');
       setting3.setAttribute('material', 'color: black');
+      const planes = document.querySelectorAll('.planes');
+      planes.forEach(entity => {
+        const isVisible = entity.getAttribute('visible');
+        entity.setAttribute('visible', !isVisible);
+      });
+      const boxes = document.querySelectorAll('.boxes');
+      boxes.forEach(entity => {
+        const isVisible = entity.getAttribute('visible');
+        entity.setAttribute('visible', !isVisible);
+      });
     });
+
   }
 });
 
