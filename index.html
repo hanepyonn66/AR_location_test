@@ -17,31 +17,28 @@
 </head>
 
 <body>
-  <a-scene vr-mode-ui='enabled: false' arjs='sourceType: webcam; videoTexture: true; debugUIEnabled: false'
-    renderer='antialias: true; alpha: true' cursor='rayOrigin: mouse' raycaster='near: 0; far: 50000'>
 
-  <div id="htmltarget" >
-   
-    <div id="htmlElement" class="target">
-      <h2>zeb棟</h2>
-      <img src="photo/zeb.jpg" alt="zeb棟写真">
-    </div>
 
-    <div id="MainBuildingEast" class="target">
-      <h2>本館東</h2>
-      <img src="photo/MainBuildingEast.jpg" alt="本館東 写真">
-    </div>
+  <div id="htmlElement" class="target">
+    <h2>zeb棟</h2>
+    <img src="photo/zeb.jpg" alt="zeb棟写真">
+  </div>
 
-    <div id="MainBuildingCentral" class="target">
-      <h2>本館中央</h2>
-      <img src="photo/MainBuildingCentral.jpg" alt="本館中央 写真">
-    </div>
+  <div id="MainBuildingEast" class="target">
+    <h2>本館東</h2>
+    <img src="photo/MainBuildingEast.jpg" alt="本館東 写真">
+  </div>
 
-    <div id="MainBuildingWest" class="target">
-      <h2>本館西</h2>
-      <img src="photo/MainBuildingWest.jpg" alt="本館西 写真">
-    </div>
-<!--
+  <div id="MainBuildingCentral" class="target">
+    <h2>本館中央</h2>
+    <img src="photo/MainBuildingCentral.jpg" alt="本館中央 写真">
+  </div>
+
+  <div id="MainBuildingWest" class="target">
+    <h2>本館西</h2>
+    <img src="photo/MainBuildingWest.jpg" alt="本館西 写真">
+  </div>
+  <!--
     <div id="WoodDeck">
       <h2>ウッドデッキ</h2>
       <img src="photo/WoodDeck.jpg" alt="ウッドデッキ 写真">
@@ -128,7 +125,11 @@
     </div>
 
   -->
-  </div>
+
+  <a-scene vr-mode-ui='enabled: false' arjs='sourceType: webcam; videoTexture: true; debugUIEnabled: false'
+    renderer='antialias: true; alpha: true' cursor='rayOrigin: mouse' raycaster='near: 0; far: 50000'>
+
+
 
     <a-camera gps-new-camera='gpsMinDistance: 2'></a-camera>
 
@@ -145,7 +146,7 @@
       look-at="[gps-new-camera]" gps-new-entity-place="latitude: 35.4237131; longitude: 139.5421153"
       scale="10 10 10"></a-entity>
 
-      <!--
+    <!--
     <a-entity class="planes" material="shader:html; target: #WoodDeck" geometry='primitive:plane'
       look-at="[gps-new-camera]" gps-new-entity-place="latitude: 35.4238595; longitude: 139.5419704"
       scale="10 10 10"></a-entity>
