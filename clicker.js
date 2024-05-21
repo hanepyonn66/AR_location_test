@@ -1,3 +1,4 @@
+/*
 AFRAME.registerComponent('clicker', {
   init: function () {
     this.el.addEventListener('click', e => {
@@ -68,7 +69,7 @@ AFRAME.registerComponent('click_setting3', {
     });
   }
 });
-
+*/
 AFRAME.registerComponent('click_url_zeb', {
   init: function () {
     this.el.addEventListener('click', e => {
