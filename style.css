@@ -1,7 +1,7 @@
 #htmlElement {
     height: 200px;
     width: 200px;
-    font-size: 24px;
+    font-size: 12px;
     z-index: -50;
     background: rgb(102, 112, 199);
     position:absolute;
@@ -22,7 +22,7 @@
     background: rgb(142, 140, 198);
     height: 200px;
     width: 200px;
-    font-size: 24px;
+    font-size: 12px;
     z-index: -50;
     position: absolute;
 }
@@ -49,7 +49,7 @@
     background: rgb(151, 164, 141);
     height: 200px;
     width: 200px;
-    font-size: 24px;
+    font-size: 12px;
     z-index: -50;
     position: absolute;
 }
