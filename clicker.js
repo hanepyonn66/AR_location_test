@@ -68,3 +68,48 @@ AFRAME.registerComponent('click_setting3', {
     });
   }
 });
+
+AFRAME.registerComponent('click_url_zeb', {
+  init: function () {
+    this.el.addEventListener('click', e => {
+      //箱の色を変える
+      AFRAME.registerComponent('click_setting1', {
+        init: function () {
+          this.el.addEventListener('click', e => {
+            window.open("https://www.taisei-techsolu.jp/tech_center/topics/zeb/", '_blank').focus();
+          });
+        }
+      });
+    });
+  }
+});
+
+AFRAME.registerComponent('click_url_StructureLab', {
+  init: function () {
+    this.el.addEventListener('click', e => {
+      //箱の色を変える
+      AFRAME.registerComponent('click_setting1', {
+        init: function () {
+          this.el.addEventListener('click', e => {
+            window.open("https://www.taisei-techsolu.jp/tech_center/facility/#anc-01", '_blank').focus();
+          });
+        }
+      });
+    });
+  }
+});
+
+AFRAME.registerComponent('click_url_WindLab', {
+  init: function () {
+    this.el.addEventListener('click', e => {
+      //箱の色を変える
+      AFRAME.registerComponent('click_setting1', {
+        init: function () {
+          this.el.addEventListener('click', e => {
+            window.open("https://www.taisei-techsolu.jp/tech_center/facility/#anc-02", '_blank').focus();
+          });
+        }
+      });
+    });
+  }
+});
