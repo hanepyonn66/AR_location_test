@@ -51,7 +51,7 @@
     width: 200px;
     font-size:12px;
     z-index: -50;
-    position: relative;
+    position: absolute;
 }
 
 #MaterialsLabEast {
