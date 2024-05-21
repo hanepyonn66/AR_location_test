@@ -17,6 +17,43 @@
     margin: auto;
     /* 画像を水平方向に中央揃えにする */
 }
+
+#MainBuildingEast {
+    background: rgb(142, 140, 198);
+    height: 200px;
+    width: 200px;
+    font-size: 12px;
+    z-index: -50;
+    position: absolute;
+}
+
+#MainBuildingCentral {
+    background: rgb(167, 145, 195);
+    height: 200px;
+    width: 200px;
+    font-size: 12px;
+    z-index: -50;
+    position: absolute;
+}
+
+#MainBuildingWest {
+    background: rgb(163, 140, 180);
+    height: 200px;
+    width: 200px;
+    font-size: 12px;
+    z-index: -50;
+    position: absolute;
+}
+
+#WoodDeck {
+    background: rgb(151, 164, 141);
+    height: 200px;
+    width: 200px;
+    font-size:12px;
+    z-index: -50;
+    position: relative;
+}
+
 #MaterialsLabEast {
     background: rgb(164, 155, 143);
     height: 200px;
