@@ -41,8 +41,6 @@
   <a-scene vr-mode-ui='enabled: false' arjs='sourceType: webcam; videoTexture: true; debugUIEnabled: false'
     renderer='antialias: true; alpha: true' cursor='rayOrigin: mouse' raycaster='near: 0; far: 50000'>
     <a-camera gps-new-camera='gpsMinDistance: 2'></a-camera>
-
-
     <a-entity material="shader:html; target: #MainBuildingEast" geometry='primitive:plane' look-at="[gps-new-camera]"
       gps-new-entity-place="latitude: 35.4240562; longitude: 139.5426021" scale="10 10 10"></a-entity>
     <a-entity material="shader:html; target: #htmlElement" geometry='primitive:plane' look-at="[gps-new-camera]"
@@ -51,8 +49,6 @@
       gps-new-entity-place="latitude: 35.4238988; longitude: 139.5423822" scale="10 10 10"></a-entity>
     <a-entity material="shader:html; target: #MainBuildingWest" geometry='primitive:plane' look-at="[gps-new-camera]"
       gps-new-entity-place="latitude: 35.4237131; longitude: 139.5421153" scale="10 10 10"></a-entity>
-
-
 
   </a-scene>
 </body>
