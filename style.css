@@ -17,48 +17,11 @@
     margin: auto;
     /* 画像を水平方向に中央揃えにする */
 }
-
-#MainBuildingEast {
-    background: rgb(142, 140, 198);
-    height: 200px;
-    width: 200px;
-    font-size: 12px;
-    z-index: -50;
-    position: absolute;
-}
-
-#MainBuildingCentral {
-    background: rgb(167, 145, 195);
-    height: 200px;
-    width: 200px;
-    font-size: 24px;
-    z-index: -50;
-    position: absolute;
-}
-
-#MainBuildingWest {
-    background: rgb(163, 140, 180);
-    height: 200px;
-    width: 200px;
-    font-size: 24px;
-    z-index: -50;
-    position: absolute;
-}
-
-#WoodDeck {
-    background: rgb(151, 164, 141);
-    height: 200px;
-    width: 200px;
-    font-size: 12px;
-    z-index: -50;
-    position: absolute;
-}
-
 #MaterialsLabEast {
     background: rgb(164, 155, 143);
     height: 200px;
     width: 200px;
-    font-size: 24px;
+    font-size: 12px;
     z-index: -50;
     position: absolute;
 }
@@ -67,7 +30,7 @@
     background: rgb(151, 136, 169);
     height: 200px;
     width: 200px;
-    font-size: 24px;
+    font-size: 12px;
     z-index: -50;
     position: absolute;
 }
@@ -76,7 +39,7 @@
     background: rgb(220, 183, 138);
     height: 200px;
     width: 200px;
-    font-size: 24px;
+    font-size: 12px;
     z-index: -50;
     position: absolute;
 }
@@ -85,7 +48,7 @@
     background: rgb(215, 207, 145);
     height: 200px;
     width: 200px;
-    font-size: 24px;
+    font-size: 12px;
     z-index: -50;
     position: absolute;
 }
@@ -94,7 +57,7 @@
     background: rgb(190, 190, 190);
     height: 200px;
     width: 200px;
-    font-size: 24px;
+    font-size: 12px;
     z-index: -50;
     position: absolute;
 }
@@ -103,7 +66,7 @@
     background: rgb(92, 105, 113);
     height: 200px;
     width: 200px;
-    font-size: 24px;
+    font-size: 12px;
     z-index: -50;
     position: absolute;
 }
@@ -112,7 +75,7 @@
     background: rgb(222, 156, 170);
     height: 200px;
     width: 200px;
-    font-size: 24px;
+    font-size: 12px;
     z-index: -50;
     position: absolute;
 }
@@ -121,7 +84,7 @@
     background: rgb(191, 144, 115);
     height: 200px;
     width: 200px;
-    font-size: 24px;
+    font-size: 12px;
     z-index: -50;
     position: absolute;
 }
@@ -130,7 +93,7 @@
     background: rgb(192, 192, 192);
     height: 200px;
     width: 200px;
-    font-size: 24px;
+    font-size: 12px;
     z-index: -50;
     position: absolute;
 }
@@ -139,7 +102,7 @@
     background: rgb(0, 0, 0);
     height: 200px;
     width: 200px;
-    font-size: 24px;
+    font-size: 12px;
     z-index: -50;
     position: absolute;
 }
@@ -148,7 +111,7 @@
     background: rgb(255, 0, 0);
     height: 200px;
     width: 200px;
-    font-size: 24px;
+    font-size: 12px;
     z-index: -50;
     position: absolute;
 }
@@ -157,7 +120,7 @@
     background: rgb(255, 255, 0);
     height: 200px;
     width: 200px;
-    font-size: 24px;
+    font-size: 12px;
     z-index: -50;
     position: absolute;
 }
@@ -166,7 +129,7 @@
     background: rgb(0, 128, 0);
     height: 200px;
     width: 200px;
-    font-size: 24px;
+    font-size: 12px;
     z-index: -50;
     position: absolute;
 }
@@ -175,7 +138,7 @@
     background: rgb(0, 0, 255);
     height: 200px;
     width: 200px;
-    font-size: 24px;
+    font-size: 12px;
     z-index: -50;
     position: absolute;
 }
@@ -184,7 +147,7 @@
     background: rgb(255, 165, 0);
     height: 200px;
     width: 200px;
-    font-size: 24px;
+    font-size: 12px;
     z-index: -50;
     position: absolute;
 }
@@ -193,7 +156,7 @@
     background: rgb(255, 255, 255);
     height: 200px;
     width: 200px;
-    font-size: 24px;
+    font-size: 12px;
     z-index: -50;
     position: absolute;
 }
