@@ -111,7 +111,7 @@ window.onload = () => {
         }
     });
     document.getElementById("go").addEventListener("click", e=> {
-        el.setAttribute("arjs-device-orientation-controls","headingOffset", -90);
+        el.setAttribute("arjs-device-orientation-controls","headingOffset", 90);
     });
 };
 
