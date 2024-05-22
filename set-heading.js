@@ -113,6 +113,7 @@ window.onload = () => {
     });
     document.getElementById("go").addEventListener("click", e=> {
         startCompass();
+        setHeading();
     });
 };
 
