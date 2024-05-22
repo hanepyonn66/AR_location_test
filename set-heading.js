@@ -111,8 +111,7 @@ window.onload = () => {
         }
     });
     document.getElementById("go").addEventListener("click", e=> {
-        startCompass();
-        setHeading();
+        el.setAttribute("arjs-device-orientation-controls","headingOffset", -90);
     });
 };
 
