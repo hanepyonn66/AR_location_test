@@ -29,7 +29,6 @@ let heading = 0;
 		const el = document.querySelector("[gps-new-camera]");
 		if (el)
 		{
-			  alert("camera found!");
 			el.setAttribute("arjs-device-orientation-controls","headingOffset", -this.heading);
 		}
 		else
