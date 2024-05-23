@@ -4,7 +4,9 @@
     font-size: 12px;
     z-index: -50;
     background: rgb(102, 112, 199);
+
     position:absolute;
+
 }
 
 #htmlElement img {
