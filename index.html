@@ -1,24 +1,139 @@
 <html>
 
-
-
 <head>
   <meta charset="UTF-8">
   <title>AR.js A-Frame Location-based</title>
   <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
   <script src="aframe-html-shader.min.js"></script>
-  <script type='text/javascript'
-    src='https://raw.githack.com/AR-js-org/AR.js/master/three.js/build/ar-threex-location-only.js'></script>
-  <script type='text/javascript'
-    src='https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js'></script>
+  <script src='ar-threex-location-only.js'></script>
+  <script src='aframe-ar.js'></script>
   <script src="https://unpkg.com/aframe-look-at-component@0.8.0/dist/aframe-look-at-component.min.js"></script>
-  <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
-  <script src="index.js"></script>
+  <script src="html2canvas.min.js"></script>
   <script src="clicker.js"></script>
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+
+  <div id="MainBuildingEast" class="target">
+    <p><em>本館東</em></p>
+    <img src="photo/MainBuildingEast.jpg" alt="本館東 写真">
+  </div>
+
+  <div id="htmlElement" class="target">
+    <p><em>zeb棟</em></p>
+    <img src="photo/zeb.jpg" alt="zeb棟写真">
+  </div>
+
+  <div id="MainBuildingCentral" class="MainBuildingCentral">
+    <p><em>本館中央</em></p>
+    <img src="photo/MainBuildingCentral.jpg" alt="本館中央 写真">
+  </div>
+
+  <div id="MainBuildingWest" class="MainBuildingWest">
+    <p><em>本館西</em></p>
+    <img src="photo/MainBuildingWest.jpg" alt="本館西 写真">
+  </div>
+
+  <div id="WoodDeck">
+    <p><em>ウッドデッキ</em></p>
+    <img src="photo/WoodDeck.jpg" alt="ウッドデッキ 写真">
+  </div>
+
+  <div id="MaterialsLabEast">
+    <p><em>材料ラボ東</em></p>
+    <img src="photo/MaterialsLabEast.jpg" alt="材料ラボ東 写真">
+  </div>
+
+  <div id="MaterialsLabWest">
+    <p><em>材料ラボ西</em></p>
+    <img src="photo/MaterialsLabWest.jpg" alt="材料ラボ西 写真">
+  </div>
+
+  <div id="DetailedTest1">
+    <p><em>本館中央詳細テスト1</em></p>
+    <img src="photo/DetailedTest1.jpg" alt="本館中央詳細テスト1 写真">
+  </div>
+
+  <div id="DetailedTest2">
+    <p><em>本館中央詳細テスト2</em></p>
+    <img src="photo/DetailedTest2.jpg" alt="本館中央詳細テスト2 写真">
+  </div>
+
+  <div id="DetailedTest3">
+    <p><em>本館中央詳細テスト3</em></p>
+    <img src="photo/DetailedTest3.jpg" alt="本館中央詳細テスト3 写真">
+  </div>
+
+  <div id="DetailedTest4">
+    <p><em>本館中央詳細テスト4</em></p>
+    <img src="photo/DetailedTest4.jpg" alt="本館中央詳細テスト4 写真">
+  </div>
+
+  <div id="OceanAndRiverLab">
+    <p><em>海と川のラボ</em></p>
+    <img src="photo/OceanAndRiverLab.jpg" alt="海と川のラボ 写真">
+  </div>
+
+  <div id="FireLab">
+    <p><em>火災のラボ</em></p>
+    <img src="photo/FireLab.jpg" alt="火災のラボ 写真">
+  </div>
+
+  <div id="SoundAndElectromagneticLab">
+    <p><em>音と電磁のラボ</em></p>
+    <img src="photo/SoundAndElectromagneticLab.jpg" alt="音と電磁のラボ 写真">
+  </div>
+
+  <div id="AcousticsLab">
+    <p><em>音響のラボ</em></p>
+    <img src="photo/AcousticsLab.jpg" alt="音響のラボ 写真">
+  </div>
+
+  <div id="WindSoundLab">
+    <p><em>風音のラボ</em></p>
+    <img src="photo/WindSoundLab.jpg" alt="風音のラボ 写真">
+  </div>
+
+  <div id="WindLab">
+    <p><em>風のラボ</em></p>
+    <img src="photo/WindLab.jpg" alt="風のラボ 写真">
+  </div>
+
+  <div id="MechanicalConstructionLab">
+    <p><em>機械化施工のラボ</em></p>
+    <img src="photo/MechanicalConstructionLab.jpg" alt="機械化施工のラボ 写真">
+  </div>
+
+  <div id="HumanAndSpaceLab">
+    <p><em>人と空間のラボ</em></p>
+    <img src="photo/HumanAndSpaceLab.jpg" alt="人と空間のラボ 写真">
+  </div>
+
+  <div id="SoilAndSpaceLab">
+    <p><em>土と空間のラボ</em></p>
+    <img src="photo/SoilAndSpaceLab.jpg" alt="土と空間のラボ 写真">
+  </div>
+
+  <div id="StructureLab">
+    <p><em>構造のラボ</em></p>
+    <img src="photo/StructureLab.jpg" alt="構造のラボ 写真">
+  </div>
+
+
+  <a-scene vr-mode-ui='enabled: false' arjs='sourceType: webcam; videoTexture: true; debugUIEnabled: false'
+    renderer='antialias: true; alpha: true' cursor='rayOrigin: mouse' raycaster='near: 0; far: 50000'>
+    <a-camera gps-new-camera='gpsMinDistance: 2'></a-camera>
+    <a-entity material="shader:html; target: #MainBuildingEast" geometry='primitive:plane' look-at="[gps-new-camera]"
+      gps-new-entity-place="latitude: 35.4240562; longitude: 139.5426021" scale="10 10 10"></a-entity>
+    <a-entity material="shader:html; target: #htmlElement" geometry='primitive:plane' look-at="[gps-new-camera]"
+      gps-new-entity-place="latitude: 35.42409122191328; longitude: 139.54206104756895" scale="10 10 10"
+      click_url_zeb></a-entity>
+    <a-entity material="shader:html; target: #MainBuildingCentral" geometry='primitive:plane' look-at="[gps-new-camera]"
+      gps-new-entity-place="latitude: 35.4238988; longitude: 139.5423822" scale="10 10 10"></a-entity>
+    <a-entity material="shader:html; target: #MainBuildingWest" geometry='primitive:plane' look-at="[gps-new-camera]"
+      gps-new-entity-place="latitude: 35.4237131; longitude: 139.5421153" scale="10 10 10"></a-entity>
+=======
   <a-scene vr-mode-ui='enabled: false' arjs='sourceType: webcam; videoTexture: true; debugUIEnabled: false'
     renderer='antialias: true; alpha: true' cursor='rayOrigin: mouse' raycaster='near: 0; far: 50000'>
 
@@ -182,8 +297,8 @@
       look-at="[gps-new-camera]" gps-new-entity-place="latitude: 35.4250632; longitude: 139.5421964"
       scale="10 10 10"></a-entity>
     <a-entity class="planes" material="shader:html; target: #WindLab" geometry='primitive:plane'
-      look-at="[gps-new-camera]" gps-new-entity-place="latitude: 35.424884; longitude: 139.5424566"
-      scale="10 10 10"></a-entity>
+      look-at="[gps-new-camera]" gps-new-entity-place="latitude: 35.424884; longitude: 139.5424566" scale="10 10 10"
+      click_url_WindLab></a-entity>
     <a-entity class="planes" material="shader:html; target: #MechanicalConstructionLab" geometry='primitive:plane'
       look-at="[gps-new-camera]" gps-new-entity-place="latitude: 35.4245736; longitude: 139.5416278"
       scale="10 10 10"></a-entity>
@@ -194,8 +309,10 @@
       look-at="[gps-new-camera]" gps-new-entity-place="latitude: 35.4244534; longitude: 139.5419202"
       scale="10 10 10"></a-entity>
     <a-entity class="planes" material="shader:html; target: #StructureLab" geometry='primitive:plane'
-      look-at="[gps-new-camera]" gps-new-entity-place="latitude: 35.4247791; longitude: 139.5421455"
-      scale="10 10 10"></a-entity>
+
+      look-at="[gps-new-camera]" gps-new-entity-place="latitude: 35.4247791; longitude: 139.5421455" scale="10 10 10"
+      click_url_StructureLab></a-entity>
+
 
 
     <!-- 本館東 -->
@@ -329,11 +446,18 @@
 
 
 
-    <!--<a-text value="日本語あいうえおかきくけこさしすせそたちつてと" font="noto-sans-cjk-jp-msdf.json" font-image="noto-sans-cjk-jp-msdf.png" look-at="[gps-new-camera]" scale="30 30 30" gps-new-entity-place="latitude:35.4247791; longitude:139.5421455"></a-text>
-        -->
+ 
   </a-scene>
 
+  <div id='setloc'
+    style='position:absolute; left: 10px; bottom: 2%; z-index:999; background-color: blue; color: white; padding: 10px'>
+    <input type='button' id='go' value='Set Heading' onclick="setHeading()" />
+  </div>
+  <div id="orientinfo"
+    style='position:absolute; right: 10px; bottom: 2%; z-index:999; background-color: blue; color: white; padding: 10px'>
+    Orientation .</div>
 
 </body>
 
 </html>
+

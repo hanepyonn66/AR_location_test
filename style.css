@@ -1,10 +1,12 @@
 #htmlElement {
     height: 200px;
     width: 200px;
-    font-size: 24px;
+    font-size: 12px;
     z-index: -50;
     background: rgb(102, 112, 199);
-    position: absolute;
+
+    position:absolute;
+
 }
 
 #htmlElement img {
@@ -18,12 +20,11 @@
     /* 画像を水平方向に中央揃えにする */
 }
 
-
 #MainBuildingEast {
     background: rgb(142, 140, 198);
     height: 200px;
     width: 200px;
-    font-size: 24px;
+    font-size: 12px;
     z-index: -50;
     position: absolute;
 }
@@ -32,7 +33,7 @@
     background: rgb(167, 145, 195);
     height: 200px;
     width: 200px;
-    font-size: 24px;
+    font-size: 12px;
     z-index: -50;
     position: absolute;
 }
@@ -41,7 +42,7 @@
     background: rgb(163, 140, 180);
     height: 200px;
     width: 200px;
-    font-size: 24px;
+    font-size: 12px;
     z-index: -50;
     position: absolute;
 }
@@ -50,153 +51,153 @@
     background: rgb(151, 164, 141);
     height: 200px;
     width: 200px;
-    font-size: 24px;
+    font-size:12px;
     z-index: -50;
-    position: relative;
+    position: absolute;
 }
 
 #MaterialsLabEast {
     background: rgb(164, 155, 143);
     height: 200px;
     width: 200px;
-    font-size: 24px;
+    font-size: 12px;
     z-index: -50;
-    position: relative;
+    position: absolute;
 }
 
 #MaterialsLabWest {
     background: rgb(151, 136, 169);
     height: 200px;
     width: 200px;
-    font-size: 24px;
+    font-size: 12px;
     z-index: -50;
-    position: relative;
+    position: absolute;
 }
 
 #DetailedTest1 {
     background: rgb(220, 183, 138);
     height: 200px;
     width: 200px;
-    font-size: 24px;
+    font-size: 12px;
     z-index: -50;
-    position: relative;
+    position: absolute;
 }
 
 #DetailedTest2 {
-    background: rgb(215, 207, 145);
+    background: rgb(206, 196, 120);
     height: 200px;
     width: 200px;
-    font-size: 24px;
+    font-size: 12px;
     z-index: -50;
-    position: relative;
+    position: absolute;
 }
 
 #DetailedTest3 {
-    background: rgb(190, 190, 190);
+    background: rgb(124, 219, 231);
     height: 200px;
     width: 200px;
-    font-size: 24px;
+    font-size: 12px;
     z-index: -50;
-    position: relative;
+    position: absolute;
 }
 
 #DetailedTest4 {
     background: rgb(92, 105, 113);
     height: 200px;
     width: 200px;
-    font-size: 24px;
+    font-size: 12px;
     z-index: -50;
-    position: relative;
+    position: absolute;
 }
 
 #OceanAndRiverLab {
-    background: rgb(222, 156, 170);
+    background: rgb(167, 81, 99);
     height: 200px;
     width: 200px;
-    font-size: 24px;
+    font-size: 12px;
     z-index: -50;
-    position: relative;
+    position: absolute;
 }
 
 #FireLab {
-    background: rgb(191, 144, 115);
+    background: rgb(136, 83, 50);
     height: 200px;
     width: 200px;
-    font-size: 24px;
+    font-size: 12px;
     z-index: -50;
-    position: relative;
+    position: absolute;
 }
 
 #SoundAndElectromagneticLab {
     background: rgb(192, 192, 192);
     height: 200px;
     width: 200px;
-    font-size: 24px;
+    font-size: 12px;
     z-index: -50;
-    position: relative;
+    position: absolute;
 }
 
 #AcousticsLab {
-    background: rgb(0, 0, 0);
+    background: rgb(240, 143, 208);
     height: 200px;
     width: 200px;
-    font-size: 24px;
+    font-size: 12px;
     z-index: -50;
-    position: relative;
+    position: absolute;
 }
 
 #WindSoundLab {
-    background: rgb(255, 0, 0);
+    background: rgb(238, 130, 130);
     height: 200px;
     width: 200px;
-    font-size: 24px;
+    font-size: 12px;
     z-index: -50;
-    position: relative;
+    position: absolute;
 }
 
 #WindLab {
-    background: rgb(255, 255, 0);
+    background: rgb(228, 228, 142);
     height: 200px;
     width: 200px;
-    font-size: 24px;
+    font-size: 12px;
     z-index: -50;
-    position: relative;
+    position: absolute;
 }
 
 #MechanicalConstructionLab {
-    background: rgb(0, 128, 0);
+    background: rgb(172, 230, 172);
     height: 200px;
     width: 200px;
-    font-size: 24px;
+    font-size: 12px;
     z-index: -50;
-    position: relative;
+    position: absolute;
 }
 
 #HumanAndSpaceLab {
-    background: rgb(0, 0, 255);
+    background: rgb(166, 166, 228);
     height: 200px;
     width: 200px;
-    font-size: 24px;
+    font-size: 12px;
     z-index: -50;
-    position: relative;
+    position: absolute;
 }
 
 #SoilAndSpaceLab {
-    background: rgb(255, 165, 0);
+    background: rgb(245, 223, 183);
     height: 200px;
     width: 200px;
-    font-size: 24px;
+    font-size: 12px;
     z-index: -50;
-    position: relative;
+    position: absolute;
 }
 
 #StructureLab {
     background: rgb(255, 255, 255);
     height: 200px;
     width: 200px;
-    font-size: 24px;
+    font-size: 12px;
     z-index: -50;
-    position: relative;
+    position: absolute;
 }
 
 #MainBuildingEast img {
